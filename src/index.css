@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Biogem";
+  src: url("./assets/fonts/Biogem-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "My Soul";
+  src: url("./assets/fonts/MySoul-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme {
+  --color-biege: var(--biege);
+  --color-olive: var(--olive);
+  --color-dark: var(--dark);
+  --font-biogem: "Biogem", sans-serif;
+  --font-mysoul: "My Soul", cursive;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+:root {
+  --biege: #e7e1e1;
+  --olive: #2e6152;
+  --dark: #000000;
+}
+
+body {
+  /* font-family: "Biogem", sans-serif; */
+  /* font-family: "My Soul", cursive; */
+}

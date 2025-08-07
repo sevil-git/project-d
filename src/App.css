@@ -1,0 +1,97 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e1e1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.revealers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.revealer {
+  flex: 1;
+  width: 100%;
+  background-color: #e7e1e1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.images-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 90;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  /* will-change: transform; */
+  z-index: 1;
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  /* will-change: transform; */
+  opacity: 0;
+}
+
+.img:first-child {
+  opacity: 1;
+}
+
+.images.stacked-container {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 1em;
+  transform: none;
+  z-index: 1;
+  /* will-change: transform; */
+}
+
+.img.stacked {
+  position: relative;
+  width: 110px;
+  height: 75px;
+  transform: none;
+  top: auto;
+  left: auto;
+  opacity: 1;
+  /* will-change: transform; */
+  border-radius: 0.8rem; 
+  overflow: hidden;
+}
