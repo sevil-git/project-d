@@ -1,17 +1,57 @@
 // src/App.tsx
-import React from "react";
+import React, { useCallback, useRef, useState, useEffect } from "react";
 import "./App.css";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import LoadingAnimation from "./components/LoadingAnimation";
-import { useState } from "react";
+import FullScreenNav from "./components/FullScreenNav";
 
 const App: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pageRef = useRef<HTMLDivElement>(null);
+
+  const openMenu = useCallback(() => {
+    // if (pageRef.current) {
+    //   scrollPos.current = window.scrollY;
+    //   pageRef.current.style.position = "fixed";
+    //   pageRef.current.style.top = `-${scrollPos.current}px`;
+    //   pageRef.current.style.left = "0";
+    //   pageRef.current.style.right = "0";
+    // }
+    setIsMenuOpen(true);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    // if (pageRef.current) {
+    //   pageRef.current.style.position = "";
+    //   pageRef.current.style.top = "";
+    //   pageRef.current.style.left = "";
+    //   pageRef.current.style.right = "";
+    //   window.scrollTo(0, scrollPos.current);
+    // }
+    setIsMenuOpen(false);
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [closeMenu]);
+
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="w-full h-full">
-      <Navbar />
+    <div ref={pageRef} className="w-full h-full">
+      <Navbar isOpen={isMenuOpen} onToggle={() => (isMenuOpen ? closeMenu() : openMenu())} />
+      <FullScreenNav isOpen={isMenuOpen} onClose={closeMenu} />
       <div className={`relative ${isLoading ? "overflow-hidden" : ""} h-full`}>
       {/* <div> */}
         <LoadingAnimation setIsLoading={setIsLoading} />
