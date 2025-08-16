@@ -10,7 +10,7 @@ import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
 
-const initialImgs = [img2, img1, img3, img4];
+const initialImgs = [img2, img1, img3, img4, img2];
 const mainImgs    = [img1, img3, img4];
 
 interface LoadingAnimationProps {
@@ -54,12 +54,12 @@ const LoadingAnimation: React.FC<LoadingAnimationProps> = ({ setIsLoading }) => 
     // Image‐scale timeline
     const scaleTl = gsap.timeline();
     scaleTl.to('.img:first-child', {
-      scale: 1, duration: 1, ease: 'power4.inOut'
+      scale: 1, duration: 1.5, ease: 'power4.inOut'
     });
     document.querySelectorAll<HTMLDivElement>('.img:not(:first-child)')
       .forEach(el => {
         scaleTl.to(el, {
-          opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out'
+          opacity: 1, scale: 1, duration: 0.75, ease: 'power3.out'
         }, '>-');
       });
 

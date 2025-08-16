@@ -5,7 +5,7 @@ import App from './App.tsx'
 import Lenis from '@studio-freight/lenis'
 
 const lenis = new Lenis({
-  lerp: 0.5, // Adjust this value (0 to 1) to control smoothness.  Experiment with different values.
+  lerp: 0.3, // Adjust this value (0 to 1) to control smoothness.  Experiment with different values.
 })
 
 function raf(time: number) {

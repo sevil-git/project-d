@@ -5,6 +5,8 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import LoadingAnimation from "./components/LoadingAnimation";
 import FullScreenNav from "./components/FullScreenNav";
+import WeAre from "./components/WeAre";
+import GrayBlackScroll from "./components/Hero";
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,12 +54,16 @@ const App: React.FC = () => {
     <div ref={pageRef} className="w-full h-full">
       <Navbar isOpen={isMenuOpen} onToggle={() => (isMenuOpen ? closeMenu() : openMenu())} />
       <FullScreenNav isOpen={isMenuOpen} onClose={closeMenu} />
-      <div className={`relative ${isLoading ? "overflow-hidden" : ""} h-full`}>
-      {/* <div> */}
-        <LoadingAnimation setIsLoading={setIsLoading} />
+      {/* <div className={`relative ${isLoading ? "overflow-hidden" : ""} h-full`}> */}
+      <div>
+        {/* <LoadingAnimation setIsLoading={setIsLoading} /> */}
 
         <HeroSection />
+
+        {/* <GrayBlackScroll /> */}
         {/* Section 2 */}
+
+        {/* <WeAre /> */}
         <section className="h-screen flex items-center justify-center relative">
           <div className="text-center text-black z-20">
             <h1 className="text-6xl font-bold mb-4">Section 3</h1>
