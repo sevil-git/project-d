@@ -9,7 +9,11 @@ import video from "../assets/video.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  onAnimDone?: () => void;
+}
+
+export default function HeroSection({ onAnimDone }: HeroSectionProps) {
   // Single 300vh section + sticky stage + absolute parent + child card
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);     // sticky stage (relative)
@@ -106,6 +110,11 @@ export default function HeroSection() {
 
       // Scale later (so the path doesn’t “lift”)
       tl.to(card, { scale: TARGET_SCALE, ease: "power1.out", duration: 1 - SCALE_START }, SCALE_START);
+
+      // Notify when animation is done
+      if (onAnimDone) {
+        setTimeout(onAnimDone, 2000);
+      }
     };
 
     build();
@@ -125,12 +134,12 @@ export default function HeroSection() {
         if (st.vars.id === "cardTimeline") st.kill();
       });
     };
-  }, []);
+  }, [onAnimDone]);
 
   return (
     <section ref={sectionRef} className="relative h-[300vh] bg-biege">
       {/* Sticky viewport-height stage */}
-      <div className="sticky top-0 z-20">
+      <div className="sticky top-0">
         <div ref={stageRef} className="relative h-screen w-full">
           {/* Parent overlay: absolute, always top-0 left-0 and fills the stage */}
           <div ref={parentRef} className="absolute overflow-x-clip inset-0">

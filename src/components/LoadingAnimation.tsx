@@ -1,5 +1,5 @@
 // src/components/LoadingAnimation.tsx
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import Flip from 'gsap/Flip';
 import CustomEase from 'gsap/CustomEase';
@@ -11,17 +11,17 @@ import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
 
 const initialImgs = [img2, img1, img3, img4, img2];
-const mainImgs    = [img1, img3, img4];
+const mainImgs = [img1, img3, img4];
 
-interface LoadingAnimationProps {
-  setIsLoading: (loading: boolean) => void;
-}
+// interface LoadingAnimationProps {
+//   setIsLoading: (loading: boolean) => void;
+// }
 
-const LoadingAnimation: React.FC<LoadingAnimationProps> = ({ setIsLoading }) => {
+const LoadingAnimation = () => {
   useEffect(() => {
     gsap.registerPlugin(Flip, CustomEase);
 
-    CustomEase.create('hop',  'M0,0 C0.335,0.022 0.448,0.079 0.5,0.5 0.542,0.846 0.615,1 1,1');
+    CustomEase.create('hop', 'M0,0 C0.335,0.022 0.448,0.079 0.5,0.5 0.542,0.846 0.615,1 1,1');
     CustomEase.create('hop2', 'M0,0 C0.078,0.617 0.114,0.716 0.255,0.828 0.373,0.922 0.561,1 1,1');
 
     // Split lines if you use them later
@@ -82,9 +82,20 @@ const LoadingAnimation: React.FC<LoadingAnimationProps> = ({ setIsLoading }) => 
           absolute: true,
           stagger: { amount: -0.3 },
         });
-        setIsLoading(false);
+        // Set z-index of .revealers to -99
+        const revealers = document.querySelector('.revealers') as HTMLElement | null;
+        if (revealers) {
+          revealers.style.zIndex = '-99';
+        }
+        // Set z-index of .images-wrapper to 0
+        setTimeout(() => {
+          const imagesWrapper = document.querySelector('.images-wrapper') as HTMLElement | null;
+          if (imagesWrapper) {
+            imagesWrapper.style.zIndex = '10';
+          }
+        }, 3500);
       });
-  }, [setIsLoading]);
+  }, []);
 
   return (
     <>

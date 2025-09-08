@@ -75,7 +75,7 @@ const FullScreenNav: React.FC<FullScreenNavProps> = ({ isOpen, onClose }) => {
       role="dialog"
       aria-modal="true"
       aria-hidden={!isOpen}
-      className="fixed inset-0 w-full h-screen z-[9998] overflow-hidden text-white bg-[#305b4f]"
+      className="fixed inset-0 w-full h-screen z-[11] text-white bg-[#305b4f]"
       style={{ display: "none" }}
       onClick={onClose}
     >

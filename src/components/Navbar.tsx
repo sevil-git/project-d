@@ -91,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, onToggle }) => {
   }, [isOpen]);
 
   return (
-    <nav className="flex font-poppins fixed top-0 left-0 z-[9999] w-full items-center justify-between p-4">
+    <nav className="flex font-poppins fixed top-0 left-0 z-[12] w-full items-center justify-between p-4">
       <div className="font-bold text-sm h-5 overflow-hidden">
         <img
           src={logo}
