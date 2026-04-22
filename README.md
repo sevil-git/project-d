@@ -374,507 +374,329 @@ Size: 1200x600px
 
 ---
 
-## DASHBOARD PAGE GRAPHICS
+## DASHBOARD IMAGE PLAN
 
-### 1. HERO BANNER ENHANCEMENTS
+Use one very small visual per card or section. Keep them quiet, low-saturation, and slightly hidden in a corner so they support the UI without becoming the focus.
 
-#### Prompt 8.1: Dynamic Rank Badge Icons
+### Minimal style rules
+
+- Use thin line art, soft gradients, or almost-flat monochrome shapes.
+- Keep opacity low, around 8% to 18% if used as background art.
+- Avoid glossy 3D, bright glows, or busy textures.
+- Place the artwork in a corner, edge band, or header side area.
+- Prefer transparent backgrounds where possible.
+
+### Asset plan
+
+| File name | Position on dashboard | Purpose |
+| --- | --- | --- |
+| `dashboard-hero-corner.png` | Hero banner, top-right corner behind balance text | Quiet hero accent |
+| `dashboard-kpi-mark.png` | KPI row, far-right edge of the section | Small status signal |
+| `dashboard-quick-actions-accent.png` | Quick actions, top-right corner of the card group | Section anchor |
+| `dashboard-earnings-line.png` | Earnings Snapshot card, top-right behind title | Soft finance cue |
+| `dashboard-leaderboard-numbers.png` | Top Performers header, top-left corner | Minimal ranking cue |
+| `dashboard-referral-node.png` | Referral Stats card, bottom-right corner as background motif | Network hint |
+| `dashboard-wallet-ring.png` | Wallet Summary card, right side of the card | Balance / limit cue |
+| `dashboard-ticket-dot.png` | Ticket Balance card, top-right corner | Small utility marker |
+| `dashboard-multiplier-thread.png` | Multiplier Window card, lower-right corner behind the deadline text | Tiny progress accent |
+
+### Prompt 1: Hero corner accent
+
+**File name:** `dashboard-hero-corner.png`
+
+**Position:** Hero banner, top-right corner, partially tucked behind the balance block.
+
 ```
-Create a series of 6 rank badge icons (Member → Crown tier):
+Create a very minimal dashboard corner illustration for a fintech hero banner.
 
-Each badge shows:
-- Rank name (Member, Silver, Gold, Platinum, Diamond, Crown)
-- Unique symbol/icon representing the tier
-- Badge shape: circular or shield
-- Color gradient specific to tier:
-  * Member: Silver/Gray
-  * Silver: Light silver with blue accent
-  * Gold: Gold with emerald accent
-  * Platinum: Platinum with violet
-  * Diamond: Diamond blue with white
-  * Crown: Crimson with gold crown symbol
-
-Details:
-- Metallic/shiny finish appearance
-- Subtle inner glow
-- Elevation/3D effect
+Visual should be understated and quiet:
+- Thin outlined circle or arc
+- A few small bars or dots suggesting movement
+- One faint emerald accent and one faint crimson accent only
+- Lots of empty space
 - Transparent background
 
-Style: Achievement badges, game-like quality
-Size: 200x200px each (icon scale)
-Use: Display in hero section, rank pages, achievement screens
+Style:
+- Flat vector or almost-flat illustration
+- No shiny effects
+- No 3D rendering
+- No busy gradients
+- Must feel premium but calm
+
+Use case:
+- Place in the top-right corner of a hero banner
+- Should support the layout without drawing too much attention
+
+Color direction:
+- Warm gray, soft charcoal, muted emerald, muted crimson
+
+Size:
+- 800x800px
 ```
 
-#### Prompt 8.2: Earnings Multiplier Visual
+### Prompt 2: KPI status mark
+
+**File name:** `dashboard-kpi-mark.png`
+
+**Position:** KPI row, far-right side, used as a tiny decorative mark near the cards.
+
 ```
-Create a visual representation of earnings multiplier levels (1x → 8x):
+Create a minimal status marker for a dashboard KPI section.
 
-Design concept: Stacked multiplier rings or ascending bars
-
-Each multiplier (1x-8x) shows:
-- Clear number with "×" symbol
-- Color intensity increasing (1x neutral → 8x emerald glow)
-- Visual thickness/size increasing
-- Optional: percentage complete for current multiplier
-- Background: subtle circuit pattern or energy field
-
-Layout options:
-- Vertical stack: 1x at bottom, 8x at top
-- Horizontal bar: progressive bars increasing in height
-- Circular: concentric rings representing multiplier levels
-
-Interactions ready: hover state for detail, click for info
-
-Style: Gaming/achievement UI, satisfying progression visual
-Colors: Gradient from neutral to emerald (#00b386)
-Size: 600x400px or 400x600px
-```
-
----
-
-### 2. QUICK ACTIONS SECTION: Icon Set
-
-#### Prompt 9.1: Quick Action Card Icons (4 icons)
-```
-Create 4 custom icons for quick action cards (Salary, Rewards, Payouts, SGNX Gold):
-
-Icon 1: SALARY
-- Concept: Briefcase + trending upward arrow
-- Color: Crimson (#C41E3A)
-- Style: Minimalist line art, solid fill
-
-Icon 2: REWARDS
-- Concept: Gift box + sparkles/stars
-- Color: Violet (#7C3AED)
-- Style: Friendly, celebratory
-
-Icon 3: PAYOUTS
-- Concept: Downward arrow + wallet/cash
-- Color: Emerald (#00b386)
-- Style: Modern, simple
-
-Icon 4: SGNX GOLD
-- Concept: Gem/diamond + gold coin
-- Color: Gold (#D4A017)
-- Style: Premium, luxurious
-
-All icons:
-- 120x120px in high detail
-- Consistent stroke weight
-- Flat design with subtle depth
+Visual should look like a small technical mark, not a full illustration:
+- One thin ring
+- One tiny upward line or dot cluster
+- Neutral gray base with a single emerald highlight
 - Transparent background
-- Ready for dark and light themes
+
+Style:
+- Simple, subtle, and clean
+- Editorial tech icon style
+- No glow, no shine, no cartoon look
+
+Use case:
+- Place at the far right edge of KPI cards or as a small corner badge
+- It should be noticed only after a closer look
+
+Size:
+- 512x512px
 ```
 
----
+### Prompt 3: Quick actions corner accent
 
-### 3. EARNINGS SNAPSHOT: Chart Graphics
+**File name:** `dashboard-quick-actions-accent.png`
 
-#### Prompt 10.1: Financial Summary Chart Icons
+**Position:** Quick Actions block, top-right corner above or beside the grid.
+
 ```
-Create 4 illustration icons for financial metrics (Invested, Referral, Bonus, Incentive):
-
-Icon 1: INVESTED PRINCIPAL
-- Concept: Stacked coins + growth chart
-- Icon: Wallet with upward trend
-- Color: Neutral blue
-
-Icon 2: REFERRAL EARNINGS
-- Concept: People network + money flow
-- Icon: Connected people with currency symbols
-- Color: Emerald
-
-Icon 3: PROMOTION BONUS
-- Concept: Trophy + confetti
-- Icon: Gift/bonus badge
-- Color: Violet
-
-Icon 4: MONTHLY INCENTIVE
-- Concept: Calendar + salary/monthly payment
-- Icon: Calendar page with coin
-- Color: Crimson
-
-All icons:
-- 80x80px
-- Consistent visual language
-- Flat + subtle 3D depth
-- Professional finance aesthetic
-```
-
-#### Prompt 10.2: Mini Chart Sparklines (Visual Data)
-```
-Create 4 sparkline chart backgrounds for earnings cards (animated-ready):
-
-Each chart shows upward trend with:
-- Light background: semi-transparent card background
-- Line: Smooth curve trending upward
-- Fill gradient: Subtle color fade beneath line
-- Colors per chart:
-  * Invested: Blue gradient
-  * Referral: Emerald gradient
-  * Promotion: Violet gradient
-  * Incentive: Crimson gradient
-
-Style: Minimal, clean data visualization
-Format: SVG-ready or 800x200px PNG each
-```
-
----
-
-### 4. TOP PERFORMERS: Leaderboard Visuals
-
-#### Prompt 11.1: Leaderboard Rank Badges (1-6)
-```
-Create 6 rank badge designs for leaderboard positions:
-
-Position 1 (🥇 Gold):
-- Badge: Gold medal or crown
-- Glow: Golden/amber glow
-- Shine effect: Reflective highlight
-
-Position 2 (🥈 Silver):
-- Badge: Silver medal
-- Glow: Silver/cool glow
-- Shine: Subtle highlight
-
-Position 3 (🥉 Bronze):
-- Badge: Bronze medal
-- Glow: Bronze/warm glow
-- Shine: Light highlight
-
-Positions 4-6:
-- Badges: Numbered circles (4, 5, 6)
-- Glow: Neutral or subtle color
-- Style: Flat with subtle depth
-
-All badges:
-- 60x60px or 80x80px
-- Transparent background
-- Consistent design language
-- Emoji-alternative style
-```
-
-#### Prompt 11.2: Performer Avatar Placeholder System
-```
-Create a series of 12 avatar placeholder illustrations (diverse representations):
-
-Avatar set for use in leaderboard/team pages:
-- Mix of gender presentations
-- Diverse skin tones
-- Variety of hairstyles
-- Professional/friendly expressions
-- Wearing business/casual attire
-
-Each avatar:
-- 120x120px or 200x200px
-- Circular crop
-- Colorful backgrounds (different hue per avatar)
-- Consistent art style
-- High-quality illustration
-
-Use case: Display when actual profile pictures unavailable
-Style: Modern, inclusive, professional yet approachable
-```
-
----
-
-### 5. REFERRAL STATS: Infographic Elements
-
-#### Prompt 12.1: Referral Stats Display Cards
-```
-Create 4 custom stat display visuals for referral metrics:
-
-Card 1: TOTAL REFERRALS
-- Icon: People/network
-- Metric: Large number display
-- Background: Neutral gradient
-
-Card 2: ACTIVE AGENTS
-- Icon: People with checkmark
-- Metric: Number with percentage
-- Background: Emerald gradient
-
-Card 3: INVESTED COUNT
-- Icon: Wallet/investment
-- Metric: Number with badge
-- Background: Crimson gradient
-
-Card 4: DOWNLINE VOLUME
-- Icon: Growth/upward trend
-- Metric: Currency amount
-- Background: Violet gradient
-
-Design:
-- 300x300px minimum
-- Icon in top-left corner
-- Metric centered
-- Color-coded backgrounds
-- Ready for animation/hover states
-```
-
-#### Prompt 12.2: Network Growth Visualization
-```
-Create an animated network graph showing referral growth:
+Create a minimal corner accent for a quick actions dashboard block.
 
 Visual concept:
-- Central node (you/user)
-- 6 first-level referral nodes branching out
-- 2-level deep network showing connections
-- Node sizes proportional to activity/investment
-- Connection thickness proportional to earnings flow
+- Three small stacked rectangles or tiles
+- Very light outline only
+- One muted emerald tile and one muted crimson tile
+- Large amount of negative space
+- Transparent background
 
-Color coding:
-- Active/high-earning: Emerald glow
-- Regular: Neutral
-- Inactive: Faded
-- User (you): Highlighted in crimson
+Style:
+- Clean UI ornament
+- Minimal fintech, almost schematic
+- No icons, no text, no heavy decoration
 
-Interactive elements:
-- Hoverable nodes (show tooltip with name/earnings)
-- Animated particles flowing along connections
-- Pulsing effect on high performers
+Use case:
+- Sit in the corner of the quick actions section without competing with the buttons
 
-Style: Network visualization, modern tech aesthetic
-Size: 1200x800px
-Animation: Particle flow along connections, pulse on nodes
+Size:
+- 700x500px
 ```
 
----
+### Prompt 4: Earnings snapshot line motif
 
-### 6. WALLET SUMMARY: Visual Assets
+**File name:** `dashboard-earnings-line.png`
 
-#### Prompt 13.1: Wallet Balance Gauge/Meter
+**Position:** Earnings Snapshot card, top-right corner behind the section title.
+
 ```
-Create a visual gauge/meter showing withdrawal remaining:
+Create a minimal financial line motif for an earnings card.
 
-Design:
-- Circular or linear gauge
-- Cap amount: ₹X (outer limit)
-- Withdrawn amount: ₹Y (current level)
-- Remaining: ₹Z (available/colored portion)
+Visual should include:
+- One thin line graph curve
+- Two or three tiny data points
+- Very soft blue-gray line with a single emerald endpoint
+- Transparent background
 
-Visual elements:
-- Outer ring: Total withdrawal cap (neutral gray)
-- Inner fill: Withdrawn (semi-transparent)
-- Remaining indicator: Emerald highlight
-- Center: Large remaining amount text
+Style:
+- Minimal chart fragment, not a full chart
+- No axes, no numbers, no labels
+- Calm, understated, modern
 
-Color scheme:
-- Cap/limit: Gray (#A0A0A0)
-- Withdrawn: Light red/warning (#FFB3B3)
-- Remaining: Emerald (#00b386)
+Use case:
+- Used as a corner decoration in the earnings snapshot card
+- Should imply finance and movement without being visually loud
 
-Style: Gauge/progress meter, financial dashboard
-Size: 300x300px (circular) or 1000x200px (linear)
-```
-
-#### Prompt 13.2: Earnings Cap Progress (Illustration)
-```
-Create a visual progress bar system for earnings cap tracking:
-
-Elements:
-- Cap Total (outer): Large number in corner
-- Earned So Far (progress bar): Percentage visualization
-- Cap Remaining (highlight): Emerald-colored remaining amount
-- Timeline: Days/months remaining before reset
-
-Visual progression:
-- 0% - 25%: Green/emerald
-- 25% - 75%: Yellow/caution (if desired)
-- 75% - 100%: Orange/warning
-- At 100%: Red/capped indicator
-
-Tooltip ready: Hover shows exact amounts
-Style: Financial tracking UI, clean metrics
-Size: 1200x200px minimum
+Size:
+- 900x400px
 ```
 
----
+### Prompt 5: Leaderboard number cue
 
-### 7. RANK PROGRESSION: Visual Path
+**File name:** `dashboard-leaderboard-numbers.png`
 
-#### Prompt 14.1: Rank Progression Path Illustration
+**Position:** Top Performers header, top-left corner or tucked into the header strip.
+
 ```
-Create a visual progression path showing rank advancement:
+Create a small minimalist leaderboard cue for a dashboard card.
 
-Path design:
-- Linear or stepped progression line
-- Current rank: Highlighted/glowing
-- Completed ranks (left): Filled with checkmarks
-- Next rank (right): Dimmed/locked
-- Requirements shown at each checkpoint
+Visual concept:
+- Tiny number stack 1, 2, 3
+- Thin circles or dots next to the numbers
+- Neutral charcoal on transparent background
+- One faint gold highlight for the top rank
 
-Example progression:
-Member → Silver → Gold → Platinum → Diamond → Crown
+Style:
+- Sparse, editorial, minimal
+- No medals, no trophies, no shiny award look
+- Just enough to signal ranking
 
-Each rank shows:
-- Rank icon/badge
-- Name label
-- Progress indicator (if applicable)
-- Color-coded styling per rank
+Use case:
+- Place in the corner of the leaderboard card header
+- Should feel like a quiet information marker
 
-Visual effects:
-- Glow on current rank
-- Fade on future ranks
-- Checkmark animation on completed
-- Pulsing effect on next milestone
-
-Style: Achievement progression, motivational
-Colors: Grayscale for locked, full color for achieved, emerald for current
-Size: 1600x400px
+Size:
+- 600x300px
 ```
 
-#### Prompt 14.2: Requirement Breakdown Icons
+### Prompt 6: Referral network node
+
+**File name:** `dashboard-referral-node.png`
+
+**Position:** Referral Stats card, bottom-right corner as a very soft background motif.
+
 ```
-Create 3-4 requirement icons showing what's needed for next rank:
+Create a tiny referral network motif for a dashboard stats card.
 
-Requirement 1: ACTIVE TEAM SIZE
-- Icon: Multiple people with network connection
-- Concept: Number of active referrals needed
-- Current vs. Required: Visual comparison
+Visual concept:
+- 4 to 6 small connected nodes
+- Thin connection lines only
+- Mostly neutral gray with a single muted emerald node
+- Transparent background or very light background
 
-Requirement 2: MONTHLY VOLUME
-- Icon: Chart/upward trend with amount
-- Concept: Team sales volume threshold
-- Progress bar: Show % completion
+Style:
+- Minimal network diagram fragment
+- Clean, technical, unobtrusive
+- No glow, no animation look, no complex web
 
-Requirement 3: DEPTH REQUIREMENT
-- Icon: Pyramid/levels going down
-- Concept: Downline depth needed
-- Visual: Stacked boxes showing levels
+Use case:
+- Place near the bottom-right edge of the referral stats card
+- It should add structure, not decoration overload
 
-Requirement 4: PERFORMANCE POINTS
-- Icon: Star/achievement badge
-- Concept: Points or performance metric
-- Percentage circle: Show progress
-
-All icons:
-- 100x100px
-- Labeled with current/required values
-- Color-coded (red if not met, green if exceeded)
-- Clear typography
+Size:
+- 700x700px
 ```
 
----
+### Prompt 7: Wallet ring marker
 
-### 8. DASHBOARD BACKGROUND & ACCENTS
+**File name:** `dashboard-wallet-ring.png`
 
-#### Prompt 15.1: Abstract Dashboard Background
+**Position:** Wallet Summary card, right side or upper-right corner.
+
 ```
-Create a subtle animated background pattern for dashboard sections:
+Create a minimal balance ring graphic for a wallet summary section.
 
-Design elements:
-- Tech pattern: Hexagons, circles, or network nodes
-- Gradient base: Black to deep blue or navy
-- Accent colors: Emerald (#00b386) and Crimson (#C41E3A) subtle glows
-- Opacity: ~10-15% so it doesn't interfere with content
+Visual concept:
+- One thin circular ring
+- One small highlighted segment showing progress
+- Neutral gray base with muted emerald progress
+- Transparent background
 
-Variations:
-- Version 1: Hexagon grid with random glows
-- Version 2: Particle field with connecting lines
-- Version 3: Wave/flow pattern (data visualization style)
+Style:
+- Very simple progress visual
+- No numbers, no labels, no fancy depth
+- Quiet and functional
 
-Style: Modern fintech, tech-forward
-Animation-ready: Particles moving slowly or subtle pulse
-Size: 1920x1080px (can be tiled)
-```
+Use case:
+- Use as a small balancing or limit cue in the wallet summary card
 
-#### Prompt 15.2: Dashboard Accent Cards Background
-```
-Create gradient backgrounds for accent/highlight cards:
-
-Card background 1: EMERALD ACCENT
-- Gradient: Transparent emerald to transparent white
-- Base: White/light background
-- Accent: Emerald #00b386 as overlay
-
-Card background 2: CRIMSON ACCENT
-- Gradient: Transparent crimson to transparent white
-- Base: White/light background
-- Accent: Crimson #C41E3A as overlay
-
-Card background 3: VIOLET ACCENT
-- Gradient: Transparent violet to transparent white
-- Base: White/light background
-- Accent: Violet #7C3AED as overlay
-
-Each background:
-- Subtle texture or grain
-- Smooth gradient transitions
-- Ready for text overlay
-- 1200x800px or scalable
+Size:
+- 512x512px
 ```
 
----
+### Prompt 8: Ticket balance dot cue
+
+**File name:** `dashboard-ticket-dot.png`
+
+**Position:** Ticket Balance card, top-right corner.
+
+```
+Create a tiny ticket-style dashboard accent.
+
+Visual concept:
+- One small rounded rectangle or dot cluster
+- A subtle perforated edge hint or ticket notch
+- Muted gray with a faint emerald accent
+- Transparent background
+
+Style:
+- Extremely minimal
+- Utility-like, not playful
+- Easy to ignore at first glance but still visible
+
+Use case:
+- Add a small visual marker to the ticket balance card
+
+Size:
+- 400x400px
+```
+
+### Prompt 9: Multiplier thread
+
+**File name:** `dashboard-multiplier-thread.png`
+
+**Position:** Multiplier Window card, lower-right corner behind the deadline text.
+
+```
+Create a minimal progress-thread accent for a multiplier card.
+
+Visual concept:
+- One thin vertical or diagonal thread
+- Three to five small nodes along the line
+- Neutral gray base with a single emerald node at the end
+- Transparent background
+
+Style:
+- Minimal progress indicator, schematic and calm
+- No glow, no energy burst, no bright gradient
+- Should feel like a subtle technical annotation
+
+Use case:
+- Place in the corner of the multiplier window card
+- It should hint at progress without becoming the main visual
+
+Size:
+- 700x500px
+```
 
 ## IMPLEMENTATION NOTES
 
-### File Organization
+### Suggested public folder layout
 ```
 public/
-├── dashboard/
-│   ├── hero-preview.png
-│   ├── rank-badges/
-│   │   ├── member.png
-│   │   ├── silver.png
-│   │   ├── gold.png
-│   │   └── ... (etc)
-│   ├── multiplier-visual.png
-│   ├── referral-network.png
-│   └── earnings-charts.png
-├── landing/
-│   ├── academy-tiers.png
-│   ├── unilevel-tree.png
-│   ├── kycpassport.png
-│   ├── cash-card.png
-│   ├── timeline-roadmap.png
-│   ├── global-community-map.png
-│   └── ... (etc)
-└── icons/
-    ├── quick-actions/
-    ├── financial-metrics/
-    ├── leaderboard-badges/
-    └── ... (etc)
+└── dashboard/
+    ├── dashboard-hero-corner.png
+    ├── dashboard-kpi-mark.png
+    ├── dashboard-quick-actions-accent.png
+    ├── dashboard-earnings-line.png
+    ├── dashboard-leaderboard-numbers.png
+    ├── dashboard-referral-node.png
+    ├── dashboard-wallet-ring.png
+    ├── dashboard-ticket-dot.png
+    └── dashboard-multiplier-thread.png
 ```
 
-### Image Specifications
+### Suggested use on the dashboard
 
-**Universal Requirements:**
-- Format: PNG (transparent background where applicable) or WebP (for optimization)
-- DPI: 72 DPI for web, 300 DPI for print
-- Color space: sRGB
-- Quality: Highest quality for premium fintech aesthetic
+- Hero banner: use one corner asset only, not a full illustration.
+- KPI row: keep the visual mark tiny and low contrast.
+- Quick actions: use a corner accent, not separate images per button.
+- Earnings, leaderboard, referral, wallet, ticket, multiplier cards: each should get one small supporting image at most.
 
-**Aspect Ratios:**
-- Hero graphics: 16:9 or 21:9 (ultrawide)
-- Card graphics: 1:1 (square) or 4:3
-- Icons: 1:1 (square)
-- Full-width sections: 16:9
+### Image specs
 
-**Optimization:**
-- Compress using TinyPNG, ImageOptim, or similar
-- Use WebP where browser support allows
-- Include srcset variants for responsive sizing
+- Format: PNG or WebP
+- Background: transparent where possible
+- Quality: crisp at small sizes
+- Tone: quiet, understated, not attention-grabbing
+- Saturation: low to medium only
+- Contrast: restrained
 
-### Color Palette (Reference)
+### Color palette
 ```
-Primary Brand Colors:
-- Crimson: #C41E3A
-- Emerald: #00b386
-
-Supporting Colors:
-- Violet: #7C3AED
-- Gold: #D4A017
-- Light Background: #f8f9fa
-- Dark Background: #0f172a
-- Border: #e8e8e8
-
-Neutrals:
-- Darkest: #111827
-- Dark: #4b5563
-- Medium: #6b7280
-- Light: #d1d5db
-- Lightest: #f3f4f6
+Crimson: #C41E3A
+Emerald: #00b386
+Warm gray: #6b7280
+Charcoal: #111827
+Soft border: #e8e8e8
+Light background: #f8f9fa
 ```
 
 ---
