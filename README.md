@@ -386,37 +386,39 @@ The dashboard should feel calmer and more premium than the current icon-heavy lo
 | `dashboard-rank-figurine.png` | Current Rank KPI card | Makes rank feel tactile and premium |
 | `dashboard-progress-figurine.png` | Rank Progress KPI card | Shows movement and growth |
 | `dashboard-earnings-figurine.png` | Earnings Snapshot header or left side | Adds life to financial summary cards |
-| `dashboard-leaderboard-figurine.png` | Top Performers section header | Makes the leaderboard feel human and active |
+| `dashboard-leaderboard-figurine.png` | Top Performers section header | Makes the leaderboard feel active and dynamic |
 | `dashboard-referrals-figurine.png` | Referral Stats card | Gives network activity a playful but minimal touch |
 | `dashboard-wallet-figurine.png` | Wallet Summary card | Visualizes balances and withdrawals in a friendly way |
 | `dashboard-ticket-figurine.png` | Ticket Balance card | Adds a small utility-focused accent |
 
 ### Style Direction for All Dashboard Images
 
-- Minimal 3D figurines, not busy illustrations
+- Minimal 3D abstract totems and geometric objects (NOT human figures)
+- Non-human mascots: cubes, rings, orbs, coins, geometric shapes, abstract tokens
 - Smooth resin or clay-like material finish
-- Soft shadow under each figurine
+- Soft shadow under each object
 - Clean isolated subject, no cluttered environment
 - Light background with subtle gradient or soft blur
 - Emerald and crimson accents only where needed
 - No text baked into the image
+- No faces, limbs, or human traits
 - No heavy glow, no neon overload, no complex background scenes
 - Feels premium, friendly, and lively
 
 ### 1. HERO BANNER FIGURINE
 
-#### Prompt 8.1: Dashboard Hero Figurine
+#### Prompt 8.1: Dashboard Hero Totem
 ```
-Create a minimal premium 3D figurine for a fintech dashboard hero banner.
+Create a minimal premium 3D abstract totem for a fintech dashboard hero banner.
 
 Subject:
-- A calm, confident business character standing on a small pedestal
-- One hand holding a glowing card or coin
-- Other hand slightly raised as if presenting progress
-- Small floating balance orb or tiny upward arrow near the figure
+- A non-human abstract mascot: rounded cube + ring + coin composition on a small pedestal
+- One floating glowing card chip element
+- One upward arrow shard or progress arc element
+- Small balance orb hovering near the main shape
 
 Look and feel:
-- Minimal, clean, collectible figurine style
+- Minimal, clean, collectible totem style
 - Smooth resin or soft clay material
 - Soft studio lighting with gentle reflections
 - Clean white or very light gray background
@@ -424,26 +426,26 @@ Look and feel:
 - Realistic shadow, isolated composition
 
 Composition:
-- Figure placed slightly to the right
+- Main abstract totem placed slightly to the right
 - Negative space on the left for dashboard headline text
 - Product-shot framing, no busy scenery
 
-Style: premium 3D toy figurine, modern fintech, friendly and lively
+Style: premium 3D abstract totem, modern fintech, friendly and lively
 Size: 1400x1400px or 1600x1200px
 Filename: dashboard-hero-figurine.png
 ```
 
-#### Prompt 8.2: Hero Rank Companion Figurine
+#### Prompt 8.2: Hero Rank Companion Totem
 ```
-Create a tiny 3D companion figurine for the hero banner rank area.
+Create a tiny 3D companion totem for the hero banner rank area.
 
 Subject:
-- Small figurine wearing a crown or badge
-- Standing beside a tiny progress bar or pedestal
-- Expression should feel confident, warm, and approachable
+- Small non-human rank totem with a crown-shaped top ring and badge plate
+- Positioned beside a tiny progress bar or pedestal
+- Premium and friendly without any face or person-like body
 
 Look and feel:
-- Minimal 3D figurine, simple silhouette
+- Minimal 3D totem, simple silhouette
 - Soft matte material, no harsh textures
 - Clean studio lighting
 - Neutral background with a subtle gradient
@@ -451,48 +453,48 @@ Look and feel:
 
 Composition:
 - Centered or slightly left of center
-- Works as a smaller accent asset next to the main hero figure
+- Works as a smaller accent asset next to the main totem
 
-Style: collectible mini figurine, minimal premium dashboard accent
+Style: collectible mini totem, minimal premium dashboard accent
 Size: 1000x1000px
 Filename: dashboard-rank-figurine.png
 ```
 
 ### 2. KPI ROW FIGURINES
 
-#### Prompt 9.1: Rank Progress Figurine
+#### Prompt 9.1: Rank Progress Totem
 ```
-Create a small 3D figurine that represents progress and growth for the rank progress card.
+Create a small 3D abstract totem that represents progress and growth for the rank progress card.
 
 Subject:
-- Figurine climbing a short stepped bar or holding a tiny upward arrow
-- Simple, friendly posture
-- Small badge or star floating near the head
+- Non-human progress totem moving up a short stepped bar
+- Clean geometric body (capsule + cube + ring)
+- Small badge star floating near the top module
 
 Look and feel:
-- Minimal collectible toy style
+- Minimal collectible totem style
 - Soft clay or resin finish
 - Very clean background
-- Gentle shadow beneath the figure
+- Gentle shadow beneath the totem
 - Emerald accent for progress, crimson accent for identity
 
 Composition:
 - Figure should fit inside a card without looking crowded
 - Leave empty space for percentage text and progress bar
 
-Style: minimal 3D progress mascot, clean fintech UI asset
+Style: minimal 3D progress totem, clean fintech UI asset
 Size: 900x900px
 Filename: dashboard-progress-figurine.png
 ```
 
-#### Prompt 9.2: Package or Earnings Figurine
+#### Prompt 9.2: Package or Earnings Totem
 ```
-Create a small 3D figurine representing package value or earnings.
+Create a small 3D abstract totem representing package value or earnings.
 
 Subject:
-- Figurine standing on stacked coins or a simple platform
-- Holding a small chart or glowing token
-- Calm, premium, trustworthy expression
+- Non-human token mascot resting on stacked coins or a simple platform
+- Includes a small chart slab or glowing token insert
+- Calm, premium, trustworthy vibe through form and lighting
 
 Look and feel:
 - Rounded shapes, no busy details
@@ -504,22 +506,22 @@ Composition:
 - Best used inside the Package Value or Earnings Snapshot area
 - Keep the figure compact so text remains dominant
 
-Style: premium 3D finance figurine, minimal and elegant
+Style: premium 3D finance totem, minimal and elegant
 Size: 1000x1000px
 Filename: dashboard-earnings-figurine.png
 ```
 
 ### 3. MAIN CONTENT AREA FIGURINES
 
-#### Prompt 10.1: Top Performers Figurine Group
+#### Prompt 10.1: Top Performers Totem Group
 ```
-Create a minimal 3D group figurine asset for the Top Performers section.
+Create a minimal 3D group of abstract totems for the Top Performers section.
 
 Subject:
-- Three tiny figurines standing on a podium
-- First figure slightly elevated
-- Simple crowns or badges above the podium
-- Diverse but uniform characters, all in a collectible toy style
+- Three non-human trophy totems on a podium
+- First totem slightly elevated
+- Simple crown rings or badge disks above the podium
+- Uniform collectible shapes with subtle variation in material and color
 
 Look and feel:
 - Soft lighting, clean white background
@@ -531,19 +533,19 @@ Composition:
 - Horizontal arrangement works best
 - Leave blank space above for section title
 
-Style: leaderboard podium figurines, minimal luxury fintech
+Style: leaderboard podium totems, minimal luxury fintech
 Size: 1400x900px
 Filename: dashboard-leaderboard-figurine.png
 ```
 
-#### Prompt 10.2: Referral Network Figurine
+#### Prompt 10.2: Referral Network Totems
 ```
-Create a minimal 3D figurine asset for referral stats and network growth.
+Create a minimal 3D totem asset for referral stats and network growth.
 
 Subject:
-- One central figurine with two or three tiny connected figurines around it
-- Floating link beads or soft lines between them
-- Friendly, social, connected composition
+- One central non-human node totem with two or three smaller connected node totems
+- Floating link beads or soft connector lines between nodes
+- Friendly, social, connected composition using object mascots
 
 Look and feel:
 - Clean studio setup, very light background
@@ -555,19 +557,19 @@ Composition:
 - Use near the Referral Stats section
 - Keep the network compact and readable at small size
 
-Style: minimal social growth figurine, liveness through connection
+Style: minimal social growth totem, liveness through connection
 Size: 1200x1200px
 Filename: dashboard-referrals-figurine.png
 ```
 
-#### Prompt 10.3: Wallet Summary Figurine
+#### Prompt 10.3: Wallet Summary Totem
 ```
-Create a small 3D figurine for the wallet summary card.
+Create a small 3D abstract totem for the wallet summary card.
 
 Subject:
-- Figurine holding an open wallet or standing beside one
+- Non-human wallet totem beside an open wallet form
 - A single coin hovering above the wallet
-- Gentle confident posture
+- Gentle confident feel from proportion and lighting, no human traits
 
 Look and feel:
 - Soft matte finish, minimal details
@@ -579,19 +581,19 @@ Composition:
 - Place inside or beside the Wallet Summary card
 - Leave room for balances and withdrawal amounts
 
-Style: clean finance mascot, premium minimal 3D
+Style: clean finance totem, premium minimal 3D
 Size: 1000x1000px
 Filename: dashboard-wallet-figurine.png
 ```
 
-#### Prompt 10.4: Ticket Balance Figurine
+#### Prompt 10.4: Ticket Balance Totem
 ```
-Create a tiny 3D figurine for the ticket balance card.
+Create a tiny 3D abstract totem for the ticket balance card.
 
 Subject:
-- Figurine holding a stack of tickets or small coupons
+- Non-human ticket totem with a stack of tickets or small coupons
 - Simple and playful but still professional
-- Small icon-like companion character
+- Small icon-like companion shape (no face, no limbs)
 
 Look and feel:
 - Minimal collectible figure
@@ -603,20 +605,20 @@ Composition:
 - Compact enough to sit in a corner of a card
 - Works as a small decorative asset for utility metrics
 
-Style: minimal ticket mascot, clean dashboard detail
+Style: minimal ticket totem, clean dashboard detail
 Size: 900x900px
 Filename: dashboard-ticket-figurine.png
 ```
 
 ### 4. OPTIONAL BACKGROUND ACCENTS
 
-#### Prompt 11.1: Dashboard Ambient Figurine Shadow
+#### Prompt 11.1: Dashboard Ambient Totem Shadow
 ```
 Create a very subtle background accent image for the dashboard.
 
 Subject:
 - No main character
-- Just a soft blurred silhouette of a figurine pedestal or small abstract 3D shape
+- Just a soft blurred silhouette of a pedestal and abstract non-human 3D totem
 
 Look and feel:
 - Extremely minimal
@@ -627,7 +629,7 @@ Composition:
 - Wide, low-contrast asset
 - Should never compete with text or cards
 
-Style: ambient 3D depth layer for dashboard UI
+Style: ambient 3D totem depth layer for dashboard UI
 Size: 1920x1080px
 Filename: dashboard-ambient-bg.png
 ```
