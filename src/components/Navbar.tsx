@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, onToggle }) => {
 
   // Hide-on-scroll ONLY when menu is closed
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout | null = null;
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
     const handleScroll = () => {
       if (isOpen) {

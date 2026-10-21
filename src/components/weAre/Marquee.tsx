@@ -9,6 +9,24 @@ export type MarqueeProps = {
   pauseOnHover?: boolean;
 };
 
+function Strip({ items, icon, ariaHidden }: Pick<MarqueeProps, "items" | "icon"> & { ariaHidden?: boolean }) {
+  return (
+    <ul
+      aria-hidden={ariaHidden}
+      className="flex items-center whitespace-nowrap gap-4"
+    >
+      {items.map((w, i) => (
+        <li key={`${w}-${i}`} className="flex items-center gap-4">
+          <span className="uppercase tracking-[0.14em] font-poppins font-light text-sm md:text-2xl">
+            {w}
+          </span>
+          {icon ? <span aria-hidden>{icon}</span> : null}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function Marquee({
   items,
   speed = 18,
@@ -43,25 +61,13 @@ export function Marquee({
       return () => {
         node.removeEventListener("mouseenter", onEnter);
         node.removeEventListener("mouseleave", onLeave);
+        tlRef.current?.kill();
       };
     }
+    return () => { tlRef.current?.kill(); };
   }, [speed, pauseOnHover]);
 
-  const Strip = ({ ariaHidden }: { ariaHidden?: boolean }) => (
-    <ul
-      aria-hidden={ariaHidden}
-      className="flex items-center whitespace-nowrap gap-4"
-    >
-      {items.map((w, i) => (
-        <li key={`${w}-${i}`} className="flex items-center gap-4">
-          <span className="uppercase tracking-[0.14em] font-poppins font-light text-sm md:text-2xl">
-            {w}
-          </span>
-          {icon ? <span aria-hidden>{icon}</span> : null}
-        </li>
-      ))}
-    </ul>
-  );
+
 
   return (
     <div
@@ -70,8 +76,8 @@ export function Marquee({
       aria-label="Scrolling highlights"
     >
       <div ref={trackRef} className="flex w-max">
-        <Strip />
-        <Strip ariaHidden />
+        <Strip items={items} icon={icon} />
+        <Strip items={items} icon={icon} ariaHidden />
       </div>
       <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" />
     </div>

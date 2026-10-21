@@ -5,9 +5,19 @@ import { motion } from "framer-motion";
 
 import play from "../assets/play.svg";
 import star from "../assets/star.svg";
-import video from "../assets/video.mp4";
+import poster from "../assets/vid.png";
+
+const videos = import.meta.glob<string>("../assets/*.mp4", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+const video = videos["../assets/video.mp4"];
 
 gsap.registerPlugin(ScrollTrigger);
+
+const RIGHT_INSET = -334;
+const BOTTOM_INSET = -250;
 
 interface HeroSectionProps {
   onAnimDone?: () => void;
@@ -23,8 +33,6 @@ export default function HeroSection({ onAnimDone }: HeroSectionProps) {
   // Knobs
   const TARGET_SCALE = 1.9;    // scale at center
   const SCALE_START = 0.3;     // start scaling after 60% of travel to center
-  const RIGHT_INSET = -334;      // distance from right edge at start
-  const BOTTOM_INSET = -250;     // distance from bottom edge at start
   const MIN_M = 16, MAX_M = 32;
 
   const titleVariants = {
@@ -151,6 +159,7 @@ export default function HeroSection({ onAnimDone }: HeroSectionProps) {
             >
               <video
                 src={video}
+                poster={poster}
                 autoPlay
                 loop
                 muted
