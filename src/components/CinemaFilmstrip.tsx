@@ -22,6 +22,7 @@ export default function CinemaFilmstrip() {
     const sequence = aside.closest('.cinema-sequence')!
     const hero = sequence.querySelector<HTMLElement>('.portfolio-hero')!
     const cinema = sequence.querySelector<HTMLElement>('.work-cinema')!
+    const stage = cinema.querySelector<HTMLElement>('.cinema-stage')!
     const track = aside.querySelector<HTMLElement>('.film-track')!
     const aperture = aside.querySelector<HTMLElement>('.film-aperture')!
     const frames = Array.from(track.children) as HTMLElement[]
@@ -31,7 +32,7 @@ export default function CinemaFilmstrip() {
     let heroStart = 0, heroEnd = 0, cinemaEnd = 0, mobile = false
     const measure = () => {
       const styles = getComputedStyle(document.documentElement)
-      height = window.innerHeight; width = window.innerWidth
+      height = aside.clientHeight; width = window.innerWidth
       mobile = window.matchMedia('(max-width: 700px)').matches
       safeBottom = parseFloat(getComputedStyle(aside).paddingBottom) || 0
       frameHeight = parseFloat(styles.getPropertyValue('--intro-thumb-height'))
@@ -62,7 +63,8 @@ export default function CinemaFilmstrip() {
           x: mix(restX, width / 2 - w / 2 - position * (w + spacing), unroll),
           y: mix(height - safeBottom - inset - frameHeight, height - safeBottom - 24 - h, unroll),
         })
-        gsap.set(aside, { width: '100%', left: 0, y: Math.max(0, Math.min(150, scroll - cinemaEnd)) })
+        // Follow the departing stage rather than leaving a fixed footer over later sections.
+        gsap.set(aside, { width: '100%', left: 0, y: Math.min(0, stage.getBoundingClientRect().top) })
         gsap.set(aperture, { maskImage: 'none',
           clipPath: `inset(0 ${mix(Math.max(0, restX - 8), 0, unroll)}px ${mix(inset - 8, 0, unroll)}px ${mix(Math.max(0, restX - 8), 0, unroll)}px)` })
       } else {
@@ -91,7 +93,11 @@ export default function CinemaFilmstrip() {
         onUpdate: render, onRefresh: () => { measure(); render() } })
       render()
     }, root)
-    return () => { stripRender.current = null; context.revert(); document.documentElement.style.removeProperty('--film-nav-shift') }
+    // Mobile browser controls and orientation can change the CSS viewport height independently.
+    const resize = new ResizeObserver(() => { measure(); render() })
+    resize.observe(aside)
+    resize.observe(stage)
+    return () => { resize.disconnect(); stripRender.current = null; context.revert(); document.documentElement.style.removeProperty('--film-nav-shift') }
   }, [reduce, stripRender, reelPosition])
   return <aside ref={root} className={`cinema-filmstrip${introReady ? ' is-ready' : ''}`} aria-hidden="true">
     <div className="film-aperture"><div className="film-track">

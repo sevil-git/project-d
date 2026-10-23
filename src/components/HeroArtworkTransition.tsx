@@ -48,9 +48,10 @@ export default function HeroArtworkTransition() {
         width: fittedWidth, height: fittedHeight }
     }
     const render = () => {
-      const progress = clamp((window.scrollY - start) / (end - start))
+      // Native scrolling rounds fractional section offsets to whole pixels.
+      const docked = window.scrollY >= end - 1
+      const progress = docked ? 1 : clamp((window.scrollY - start) / (end - start))
       const mix = gsap.utils.interpolate
-      const docked = progress >= 1
       // The shader takes over with an identical fitted frame when the first dissolve begins.
       const opacity = docked ? Number(gsap.getProperty(panel, 'opacity')) : 1
       gsap.set(element, {
@@ -61,6 +62,7 @@ export default function HeroArtworkTransition() {
         borderRadius: 5 * (1 - progress),
       })
       element.dataset.docked = String(docked)
+      stage.dataset.artworkSettled = String(docked)
     }
     const context = gsap.context(() => {
       measure()
@@ -71,7 +73,7 @@ export default function HeroArtworkTransition() {
       render()
     }, root)
     document.fonts.ready.then(() => { if (!cancelled) ScrollTrigger.refresh() })
-    return () => { cancelled = true; heroRender.current = null; context.revert() }
+    return () => { cancelled = true; heroRender.current = null; delete stage.dataset.artworkSettled; context.revert() }
   }, [reduce, heroRender])
   if (reduce) return null
   return <div ref={root} className="hero-art hero-transit" data-docked="false">

@@ -42,7 +42,6 @@
 .hero-art { position: absolute; left: 0; top: 0; width: 28vw; aspect-ratio: 4 / 5; z-index: 4; box-shadow: 0 20px 50px #171a1722; background: #d9d5cf; border-radius: 6px; }
 .hero-art picture, .hero-art img { width: 100%; height: 100%; object-fit: contain; display: block; border-radius: inherit; }
 .hero-art > span { position: absolute; top: calc(100% + 12px); left: 0; font-size: 7px; letter-spacing: .12em; }
-.hero-scroll-note { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); font-size: 9px; white-space: nowrap; }
 .hero-copy { position: absolute; top: 0; left: 0; width: 100%; height: 100svh; padding: 108px var(--page-gutter) 32px; pointer-events: none; }
 .hero-copy a { pointer-events: auto; }
 .hero-copy .eyebrow { display: flex; justify-content: space-between; }
@@ -160,7 +159,6 @@
   .hero-description .underlined-link { font-size: 10px; gap: 12px; }
   :root { --intro-thumb-width: 80px; --intro-thumb-height: 54px; --intro-thumb-gap: 10px; --intro-thumb-inset: 22px; }
   .hero-spark { font-size: 32px; top: 48%; }
-  .hero-scroll-note { bottom: 10px; font-size: 8px; }
   .section-label { font-size: 8px; }
   .section-label > span:last-child { text-align: right; max-width: 42%; }
   .work-heading { align-items: start; flex-direction: column; gap: 24px; padding: 35px 0 25px; }
@@ -232,10 +230,15 @@
 .film-frame.is-opening img { object-fit: contain; border-radius: 2px; }
 .hero-art { aspect-ratio: 4 / 5; }
 /* The stage is sticky; its surrounding section supplies the reel's scroll distance. */
-.cinema-work.section-spacing { padding-top: 0; border-top: 0; }
+.cinema-work.section-spacing { padding-top: 0; border-top: 0; scroll-margin-top: -70px; }
 .work-cinema { position: relative; height: 576svh; margin-left: calc(-1 * var(--page-gutter)); margin-right: calc(-1 * var(--page-gutter)); }
 .cinema-stage { position: sticky; top: 0; height: 100svh; min-height: 540px; padding: 106px var(--page-gutter) 12px max(160px, 13vw); display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; gap: 10px; overflow: clip; }
 .cinema-stage::before { content: ''; position: absolute; z-index: -1; inset: 15% 6% 10% 20%; background: radial-gradient(ellipse, #f9f6ed88, transparent 70%); pointer-events: none; }
+/* Reserve the layout, but reveal its labels only once the shared hero image has docked. */
+.cinema-copy { opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .32s ease, transform .32s ease; }
+.cinema-stage[data-artwork-settled="true"] .cinema-copy, .is-reduced .cinema-copy { opacity: 1; visibility: visible; transform: none; }
+.work-cinema:not(.is-reduced) .cinema-stage:not([data-artwork-settled="true"]) .cinema-enlarge { visibility: hidden; }
+.is-reduced .cinema-enlarge { visibility: visible; }
 .cinema-stage-top { display: flex; justify-content: space-between; gap: 20px; font-size: 8px; letter-spacing: .12em; }
 .cinema-screen { position: relative; min-height: 0; perspective: 1100px; }
 .cinema-panel { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; opacity: 0; visibility: hidden; pointer-events: none; transform-origin: left center; transform-style: preserve-3d; }

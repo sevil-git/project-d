@@ -26,7 +26,7 @@ export default function HeroSection() {
   }, [reduce])
 
   return <section ref={section} id="home" className={`portfolio-hero ${reduce ? 'reduce-motion' : ''}`}>
-    <div className="hero-stage" ref={stage}><div ref={card} className={`hero-art-origin ${reduce ? 'hero-art' : ''}`} aria-hidden={!reduce}>{reduce && <ArtworkImage art={heroArt} eager sizes="(max-width: 700px) 80vw, 660px" />}</div><span className="hero-scroll-note">Keep scrolling. It gets more Potato. ↓</span></div>
+    <div className="hero-stage" ref={stage}><div ref={card} className={`hero-art-origin ${reduce ? 'hero-art' : ''}`} aria-hidden={!reduce}>{reduce && <ArtworkImage art={heroArt} eager sizes="(max-width: 700px) 80vw, 660px" />}</div></div>
     <div className="hero-copy"><div className="eyebrow"><span>GAYATRI, AKA POTATO</span><span>VISUAL DESIGNER. PIXEL OVERTHINKER.</span></div>
       <motion.h1 initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 2.1 }}><ScrambleText text="Made you" delay={0} /><br /><ScrambleText text="look " delay={0.12} /><span className="script-word"><ScrambleText text="twice." delay={0.24} /></span><br /><ScrambleText text="You’re welcome" delay={0.36} /><span className="hero-dot">.</span></motion.h1>
       <div className="hero-description"><p>Graphic designer.<br />Professional pixel overthinker.<br />Occasional font interventionist.</p><a href="#work" className="underlined-link">See the evidence <span>↘</span></a></div>
