@@ -5,6 +5,7 @@
   src: url("./assets/fonts/Biogem-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url("./assets/fonts/Biogem-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
   src: url("./assets/fonts/Biogem-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +29,7 @@
   src: url("./assets/fonts/Biogem-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +37,7 @@
   src: url("./assets/fonts/Biogem-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +45,7 @@
   src: url("./assets/fonts/Biogem-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -47,6 +53,7 @@
   src: url("./assets/fonts/Biogem-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -54,6 +61,7 @@
   src: url("./assets/fonts/Biogem-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -61,6 +69,7 @@
   src: url("./assets/fonts/Biogem-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -68,6 +77,7 @@
   src: url("./assets/fonts/MySoul-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -75,6 +85,7 @@
   src: url("./assets/fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -82,6 +93,7 @@
   src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -89,6 +101,7 @@
   src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -96,6 +109,7 @@
   src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @theme {
@@ -116,4 +130,18 @@
 html {
   /* font-family: "Biogem", sans-serif; */
   /* font-family: "My Soul", cursive; */
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+html, body, #root { min-height: 100%; background: #e7e1e1; }
+body { margin: 0; font-family: "Poppins", sans-serif; color: #171a17; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible { outline: 2px solid #2e6152; outline-offset: 5px; }
+::selection { background: #2e6152; color: #e7e1e1; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .portfolio-intro { display: none !important; }
 }

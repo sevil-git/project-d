@@ -1,0 +1,61 @@
+.potato-about { background: #d8dfd3; color: #20281e; }
+.potato-about-heading { text-align: center; padding: 65px 0 30px; }
+.potato-about-heading h2 { font-size: clamp(64px, 8.7vw, 142px); line-height: 1.05; margin: 18px 0; }
+.potato-about-heading > p:last-child { font-size: 12px; opacity: .65; }
+.potato-universe { position: relative; height: 570px; isolation: isolate; background: radial-gradient(ellipse at 50% 53%, #eef0cfb0, transparent 60%); }
+.potato-universe::before { content: ''; position: absolute; inset: 15px 0; z-index: -1; background-image: radial-gradient(#31473038 .8px, transparent .8px); background-size: 24px 24px; mask-image: radial-gradient(ellipse, black 15%, transparent 70%); }
+.potato-coordinate { position: absolute; font: 8px/1.6 monospace; letter-spacing: .12em; opacity: .6; }
+.coordinate-top { left: 0; top: 35px; }.coordinate-bottom { right: 0; bottom: 25px; text-align: right; }.coordinate-bottom small { display: block; font-size: 9px; letter-spacing: 0; }
+.potato-orbit { position: absolute; left: 50%; top: 50%; border: 1px solid #52694735; border-radius: 50%; pointer-events: none; }
+.orbit-one { width: 70%; height: 74%; transform: translate(-50%, -50%) rotate(-13deg); }.orbit-two { width: 61%; height: 92%; transform: translate(-50%, -50%) rotate(24deg); border-style: dashed; }
+.potato-stage { position: absolute; left: 50%; top: 50%; transform: translate(calc(-50% + var(--world-x, 0px)), calc(-50% + var(--world-y, 0px))); display: flex; flex-direction: column; align-items: center; transition: transform .3s ease-out; }
+.universe-mascot.potato-mascot, .universe-mascot .potato-drawing, .universe-mascot .potato-drawing svg { width: 288px; height: 288px; flex-basis: auto; }
+.universe-mascot { filter: drop-shadow(0 24px 15px #35452a22); }
+.universe-mascot:hover { cursor: grab; }.universe-mascot:active { cursor: grabbing; }
+.potato-speech { position: relative; background: #f5f1dc; border: 1px solid #596047; border-radius: 12px 12px 12px 0; padding: 12px 18px; font-size: 10px; transform: rotate(-4deg); box-shadow: 4px 4px 0 #52694715; white-space: nowrap; }
+.potato-nameplate { margin-top: -6px; font: 23px/1 'Biogem', sans-serif; letter-spacing: .09em; text-align: center; }.potato-nameplate span { display: block; font: 8px/2.5 monospace; letter-spacing: .15em; }
+.world-object { position: absolute; display: flex; align-items: center; gap: 12px; background: transparent; border: 0; color: inherit; text-align: left; cursor: pointer; z-index: 2; transition: transform .25s; padding: 12px; }
+.world-object:hover, .world-object.is-selected { transform: translateY(-6px) rotate(-3deg); }.world-object:focus-visible { outline: 2px dashed #385a31; outline-offset: 6px; }
+.world-object-icon { display: grid; place-items: center; width: 76px; height: 76px; border: 1px solid #46563d; border-radius: 18px; font: 42px/1 Georgia, serif; background: #e9eddf; box-shadow: 5px 6px 0 #9ba98b; transition: background .25s, box-shadow .25s; }.world-object.is-selected .world-object-icon { background: #324b32; color: #f3edb4; box-shadow: 5px 6px 0 #aab88c; }
+.world-object-label { font-size: 12px; font-weight: 500; }.world-object-label small { display: block; font: 7px/2.5 monospace; letter-spacing: .12em; opacity: .6; }
+.object-0 { left: 13%; top: 14%; transform: rotate(-6deg); }.object-1 { right: 5%; top: 18%; transform: rotate(7deg); }.object-2 { left: 5%; bottom: 17%; transform: rotate(-8deg); }.object-3 { right: 10%; bottom: 14%; transform: rotate(5deg); }
+.world-spark { position: absolute; font-size: 35px; color: #73815a; pointer-events: none; }.spark-one { left: 38%; top: 11%; }.spark-two { right: 29%; bottom: 9%; font-size: 22px; }.spark-three { left: 28%; top: 60%; font-size: 18px; }
+.potato-story { border-top: 1px solid #46563d55; padding: 34px 0 45px; display: grid; grid-template-columns: 90px 1fr 200px; gap: 30px; min-height: 258px; align-items: start; }.story-index { font: 50px/1 'Biogem', sans-serif; color: #617452; }.story-index small { font: 10px/1 monospace; margin-left: 8px; }.story-content { max-width: 650px; }.story-content h3 { font: 34px/1.2 'Biogem', sans-serif; margin-bottom: 14px; }.story-content p { font-size: 12px; line-height: 1.85; }.story-note { display: block; font: 10px/1.7 monospace; margin-top: 18px; opacity: .7; }.story-stamp { justify-self: end; align-self: center; font: 19px/1.15 'Biogem', sans-serif; padding: 17px; border: 1px solid #718464; transform: rotate(6deg); }.story-stamp span { color: #718464; }.potato-quest-link { display: inline-block; font-size: 11px; margin-top: 12px; border-bottom: 1px solid; }
+@media(min-width: 701px) and (max-width: 1000px) { .world-object { flex-direction: column; gap: 7px; }.object-0 { left: 7%; }.object-1 { right: 4%; }.object-2 { left: 2%; }.object-3 { right: 5%; }.world-object-label { text-align: center; }.potato-story { grid-template-columns: 65px 1fr; }.story-stamp { display: none; } }
+@media(max-width: 700px) { .potato-about-heading { padding: 45px 0 15px; }.potato-about-heading h2 { font-size: clamp(54px, 13vw, 88px); }.potato-about-heading .eyebrow { font-size: 8px; }.potato-about .section-label > span:last-child { display: none; }.potato-universe { height: 560px; }.coordinate-top { top: 12px; font-size: 6px; }.coordinate-bottom { display: none; }.potato-stage { top: 39%; }.universe-mascot.potato-mascot, .universe-mascot .potato-drawing, .universe-mascot .potato-drawing svg { width: 224px; height: 224px; }.potato-speech { font-size: 9px; padding: 10px 13px; }.orbit-one { width: 100%; height: 50%; top: 38%; }.orbit-two { width: 80%; height: 65%; top: 38%; }.world-object { position: static; padding: 10px 3px; transform: none; gap: 9px; }.world-object:hover, .world-object.is-selected { transform: translateY(-3px); }.world-object-icon { width: 42px; height: 42px; font-size: 25px; border-radius: 10px; box-shadow: 3px 3px 0 #9ba98b; flex-shrink: 0; }.world-object-label { font-size: 10px; }.world-object-label small { font-size: 6px; }.potato-world-tabs { position: absolute; bottom: 12px; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; }.spark-one { left: 13%; top: 19%; }.spark-two { right: 8%; bottom: 40%; }.spark-three { left: 8%; top: 49%; }.potato-story { grid-template-columns: 38px 1fr; gap: 15px; padding: 25px 0 35px; min-height: 300px; }.story-index { font-size: 32px; }.story-index small { display: block; margin: 8px 0 0; font-size: 8px; }.story-content h3 { font-size: 28px; }.story-content p { font-size: 11px; }.story-stamp { display: none; } }
+@media(prefers-reduced-motion: reduce) { .potato-stage { transform: translate(-50%, -50%); transition: none; }.world-object { transition: none; } }
+.potato-about-heading h2 { font-family: 'Biogem', sans-serif; font-weight: 500; text-transform: uppercase; }
+.potato-about-heading h2 .script-word { text-transform: none; }
+/* The story is readable in full; the companion reacts as each chapter passes. */
+.potato-scroll-journey { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 7%; align-items: start; }
+.potato-scroll-about .potato-universe { position: sticky; top: 100px; height: min(650px, 78svh); min-height: 460px; }
+.potato-scroll-about .coordinate-bottom { display: none; }
+.potato-scroll-about .potato-stage { top: 46%; }
+.potato-scroll-about .universe-mascot, .potato-scroll-about .universe-mascot .potato-drawing, .potato-scroll-about .universe-mascot .potato-drawing svg { width: clamp(220px, 24vw, 320px); height: clamp(220px, 24vw, 320px); }
+.potato-scene-props .world-object { pointer-events: none; padding: 0; }
+.potato-scene-props .world-object-icon { width: 55px; height: 55px; font-size: 30px; border-radius: 13px; }
+.potato-scene-props .object-0 { left: 4%; top: 18%; }.potato-scene-props .object-1 { right: 0; top: 22%; }.potato-scene-props .object-2 { left: 0; bottom: 19%; }.potato-scene-props .object-3 { right: 4%; bottom: 19%; }
+.potato-scroll-about .orbit-one { width: 100%; height: 65%; top: 46%; }.potato-scroll-about .orbit-two { width: 82%; height: 85%; top: 46%; }
+.potato-journey-progress { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; width: 160px; flex-wrap: wrap; }
+.potato-journey-progress > span { height: 3px; flex: 1; background: #52694735; transition: background .3s; }.potato-journey-progress > .is-complete { background: #324b32; }.potato-journey-progress small { width: 100%; text-align: center; font: 7px/2.5 monospace; letter-spacing: .06em; }
+.potato-scroll-chapter { min-height: 75svh; display: flex; flex-direction: column; justify-content: center; border-bottom: 1px solid #52694735; padding: 65px 0; position: relative; }
+.potato-scroll-chapter:last-child { border: 0; }
+.chapter-kicker { font: 9px/1.5 monospace; text-transform: uppercase; letter-spacing: .15em; color: #617452; margin-bottom: 25px; }
+.potato-scroll-chapter h3 { font: 500 clamp(44px, 4.6vw, 76px)/1.03 'Biogem', sans-serif; max-width: 500px; text-transform: uppercase; margin-bottom: 25px; }
+.chapter-description { font-size: 13px; line-height: 1.9; max-width: 450px; }
+.chapter-doodle { font: 32px/1.3 'My Soul', cursive; color: #617452; transform: rotate(-6deg); margin-top: 30px; align-self: flex-end; }
+.potato-scroll-chapter .potato-quest-link { align-self: flex-start; }
+@media(max-width:700px) {
+ .potato-scroll-journey { display: block; }
+ .potato-scroll-about .potato-universe { top: 55px; min-height: 0; height: 285px; z-index: 3; background: #d8dfd3; margin: 0 calc(-1 * var(--page-gutter)); padding: 0 var(--page-gutter); border-bottom: 1px solid #52694725; }
+ .potato-scroll-about .universe-mascot, .potato-scroll-about .universe-mascot .potato-drawing, .potato-scroll-about .universe-mascot .potato-drawing svg { width: 160px; height: 160px; }
+ .potato-scroll-about .potato-stage { top: 45%; }.potato-scroll-about .potato-speech { font-size: 8px; padding: 7px 11px; }.potato-scroll-about .potato-nameplate { font-size: 17px; }.potato-scroll-about .potato-nameplate span { font-size: 6px; }
+ .potato-scroll-about .coordinate-top { left: 22px; top: 8px; font-size: 5px; }
+ .potato-scene-props .world-object { position: absolute; }.potato-scene-props .world-object-icon { width: 34px; height: 34px; font-size: 21px; border-radius: 8px; }
+ .potato-scene-props .object-0 { left: 12%; top: 22%; }.potato-scene-props .object-1 { right: 10%; top: 25%; }.potato-scene-props .object-2 { left: 8%; bottom: 25%; }.potato-scene-props .object-3 { right: 10%; bottom: 23%; }
+ .potato-scroll-about .orbit-one { width: 85%; height: 73%; }.potato-scroll-about .orbit-two { height: 85%; width: 65%; }
+ .potato-scroll-about .world-spark { font-size: 19px; }.potato-journey-progress { bottom: 3px; width: 130px; }.potato-journey-progress small { font-size: 6px; }
+ .potato-scroll-chapter { min-height: 62svh; padding: 45px 0; scroll-margin-top: 360px; }.potato-scroll-chapter h3 { font-size: 44px; max-width: 320px; }.chapter-description { font-size: 12px; }.chapter-doodle { font-size: 27px; }.chapter-kicker { margin-bottom: 18px; }
+}
+@media(prefers-reduced-motion:reduce) { .potato-scroll-about .potato-universe { position: relative; top: auto; }.potato-scroll-chapter { min-height: 0; }.potato-journey-progress > span { transition: none; } }
+.potato-scroll-about { overflow: clip; }

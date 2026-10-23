@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useReducedMotion } from "framer-motion";
 
 export type MarqueeProps = {
   items: string[];
@@ -34,11 +35,12 @@ export function Marquee({
   icon,
   pauseOnHover = true,
 }: MarqueeProps) {
+  const reduce = useReducedMotion();
   const trackRef = useRef<HTMLDivElement>(null);
   const tlRef = useRef<gsap.core.Tween | null>(null);
 
   useEffect(() => {
-    if (!trackRef.current) return;
+    if (!trackRef.current || reduce) return;
 
     // reset any previous tween
     tlRef.current?.kill();
@@ -65,7 +67,7 @@ export function Marquee({
       };
     }
     return () => { tlRef.current?.kill(); };
-  }, [speed, pauseOnHover]);
+  }, [speed, pauseOnHover, reduce]);
 
 
 

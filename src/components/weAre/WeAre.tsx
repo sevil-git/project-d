@@ -1,169 +1,72 @@
-import React, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useReducedMotion,
-} from "framer-motion";
-import type { Variants } from "framer-motion";
-import { Marquee } from "./Marquee";
+import { useEffect, useRef, useState } from 'react'
+import type { PointerEvent } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { Marquee } from './Marquee'
+import ScrambleText from '../ScrambleText'
+import swordsman from '../../assets/potato-swordsman.svg?raw'
+import './PotatoWorld.css'
 
-const container: Variants = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.1, delayChildren: 0.15 } },
-};
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-const fadeLeft: Variants = {
-  hidden: { opacity: 0, x: -24 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-const fadeRight: Variants = {
-  hidden: { opacity: 0, x: 24 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
+const chapters = [
+  { icon: '✳', label: 'The human', title: 'Small potato. Big ideas.', text: 'Gayatri to most. Potato to the internet. A graphic designer turning chaotic references, random ideas, and “can you make it pop?” into things you actually stop scrolling for.', note: '100% human. Approximately 87% layers.', action: 'happy' },
+  { icon: 'Aa', label: 'The obsession', title: 'It’s just two pixels. It matters.', text: 'Posters with a point of view. Thumbnails that don’t whisper. Composites with plot twists. If it needs attention, I’m probably nudging its type two pixels to the left.', note: 'Currently defending the correct font choice.', action: 'swipe' },
+  { icon: '☾', label: 'The after hours', title: 'Good taste. Bad bedtime.', text: 'One more tweak. One more version. One more “wait, what if…” Some call it overthinking. I call it giving the idea a suspicious amount of attention.', note: 'Sleep schedule: a work in progress.', action: 'hop' },
+  { icon: '↗', label: 'Your side quest', title: 'Bring a brief. Or a wild idea.', text: 'A polished brief, a chaotic voice note, a reference you can’t quite explain. Bring it. Let’s turn the thing in your head into the thing everyone’s looking at.', note: 'New quest? My DMs are open.', action: 'happy' },
+] as const
+const words = ['Just one more tweak', 'Main-character pixels', 'Ctrl + Z enthusiast', 'Strong font opinions', 'Make it pop? Say less.']
 
-import { Star } from "./Star";
-
-const words = [
-  "Side",
-  "Effects",
-  "Of",
-  "Working",
-  "With",
-  "Us",
-  "Include",
-  "Iconic",
-  "Imagery",
-  "Cinematic",
-  "GOOSEBUMPS",
-  "And",
-  "A",
-  "LITTLE",
-  "OBSESSION",
-];
-
-const WeAre: React.FC = () => {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const rMotion = useReducedMotion();
-
-  // Parallax on the central image
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"], // when top of section hits bottom of viewport -> when bottom hits top
-  });
-  const y = useTransform(scrollYProgress, [0, 1], [30, -30]); // vertical drift
-  const scale = useTransform(scrollYProgress, [0, 1], [0.98, 1.02]); // gentle scale
-
-  return (
-    <section
-      ref={sectionRef}
-      id="what"
-      className="relative min-h-screen mt-52 w-full bg-biege text-black overflow-hidden"
-    >
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ amount: 0.35, once: true }}
-        className="mx-auto max-w-6xl px-6 md:px-10 pt-14 md:pt-20 pb-36"
-      >
-        {/* twin paragraphs */}
-        <div className="flex justify-center gap-4">
-          <motion.p
-            variants={fadeUp}
-            className="text-right tracking-[0.15em] leading-relaxed uppercase text-[12px] md:text-[13px]"
-          >
-            WE ARE <br />
-            <span className="font-semibold">PROJECT D</span>, <br />
-            AND WE'RE <br /> HERE TO TELL <br />
-            YOUR STORY <br /> IN CINEMA.
-          </motion.p>
-          <motion.p
-            variants={fadeUp}
-            className="text-left tracking-[0.15em] leading-relaxed uppercase text-[12px] md:text-[13px]"
-          >
-            WE ARE <br />
-            <span className="font-semibold">PROJECT D</span>, <br />
-            AND WE'RE <br /> HERE TO TELL <br />
-            YOUR STORY <br /> IN CINEMA.
-          </motion.p>
-        </div>
-
-        {/* middle strip */}
-        <div className="relative mt-10 md:mt-14">
-          <motion.div
-            variants={fadeLeft}
-            className="absolute -left-2 md:-left-10 top-2 text-[10px] uppercase tracking-widest text-center"
-          >
-            <div className="opacity-60">No limits, (01)</div>
-            <div className="opacity-80">Just vision.</div>
-          </motion.div>
-          <motion.div
-            variants={fadeRight}
-            className="absolute -right-2 md:-right-10 top-2 text-[10px] uppercase tracking-widest text-center"
-          >
-            <div className="opacity-60">(02) Cinematic</div>
-            <div className="opacity-80">Ideas. Flawless </div>
-            <div className="opacity-80">execution. </div>
-          </motion.div>
-
-          <div className="flex items-center justify-between">
-            <motion.span
-              variants={fadeLeft}
-              className="select-none font-biogem text-[88px] md:text-[120px] font-black"
-            >
-              WE
-            </motion.span>
-
-            {/* Parallax image */}
-            <motion.div
-              variants={fadeUp}
-              className="mx-4 flex-1 max-w-2xl"
-              style={rMotion ? undefined : { y, scale }}
-            >
-              <div className="rounded-[18px] border-[6px] border-black/80 p-1">
-                <img
-                  src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&w=1600&auto=format&fit=crop"
-                  alt="Project D still"
-                  className="block w-full rounded-[12px] object-cover aspect-[16/9]"
-                />
-              </div>
-            </motion.div>
-
-            <motion.span
-              variants={fadeRight}
-              className="select-none font-biogem text-[88px] md:text-[120px] font-black"
-            >
-              ARE
-            </motion.span>
-          </div>
-        </div>
-
-        {/* bottom headline */}
-        <motion.h3
-          variants={fadeUp}
-          className="mt-10 md:mt-14 text-center text-[22px] md:text-[28px] tracking-[0.14em] uppercase"
-        >
-          <span className="font-semibold">Project D</span> is where stories come
-          alive
-          <span className="inline-block w-10 align-middle border-t border-black/70 mx-2" />
-          and visuals are born iconic
-        </motion.h3>
-      </motion.div>
-
-      <div className="absolute bottom-2 left-2 z-30">
-        <h1 className="bg-black uppercase font-biogem text-biege px-6 tracking-wide py-3 rounded-2xl text-4xl ">
-          Warning
-        </h1>
+export default function WeAre() {
+  const [active, setActive] = useState(0)
+  const [pokes, setPokes] = useState(0)
+  const [awake, setAwake] = useState(false)
+  useEffect(() => {
+    if (!pokes) return
+    const timer = setTimeout(() => setPokes(0), 2400)
+    return () => clearTimeout(timer)
+  }, [pokes])
+  const world = useRef<HTMLDivElement>(null)
+  const stories = useRef<HTMLDivElement>(null)
+  const reduce = useReducedMotion()
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+      if (visible) setActive(Number((visible.target as HTMLElement).dataset.chapter))
+    }, { rootMargin: '-35% 0px -35% 0px', threshold: 0 })
+    stories.current?.querySelectorAll('[data-chapter]').forEach(node => observer.observe(node))
+    return () => observer.disconnect()
+  }, [])
+  const chapter = chapters[active]
+  function look(event: PointerEvent<HTMLDivElement>) {
+    if (reduce || event.pointerType === 'touch') return
+    const box = event.currentTarget.getBoundingClientRect()
+    world.current?.style.setProperty('--world-x', `${((event.clientX - box.left) / box.width - .5) * 10}px`)
+    world.current?.style.setProperty('--world-y', `${((event.clientY - box.top) / box.height - .5) * 8}px`)
+  }
+  return <section id="about" className="about-section potato-about potato-scroll-about section-spacing">
+    <div className="section-label"><span>02 / THE HUMAN BEHIND THE LAYERS</span><span>CAUTION: CONTAINS PERSONALITY.</span></div>
+    <div className="potato-about-heading"><p className="eyebrow">DESIGNER BY TRADE. POTATO BY CHOICE.</p><h2><ScrambleText text="Inside Potato’s" /> <span className="script-word"><ScrambleText text="head." delay={.2} /></span></h2><p>Keep scrolling. The potato has a backstory.</p></div>
+    <div className="potato-scroll-journey">
+    <div className="potato-universe" ref={world} onPointerMove={look} onPointerLeave={() => { world.current?.style.setProperty('--world-x', '0px'); world.current?.style.setProperty('--world-y', '0px') }}>
+      <div className="potato-coordinate coordinate-top">POTATO.EXE / PERSONALITY LOADED</div>
+      <div className="potato-coordinate coordinate-bottom">NOT A VEGETABLE. A WHOLE CREATIVE DEPARTMENT.*<small>*okay, one very invested person.</small></div>
+      <div className="potato-orbit orbit-one" aria-hidden="true" /><div className="potato-orbit orbit-two" aria-hidden="true" />
+      <span className="world-spark spark-one" aria-hidden="true">✧</span><span className="world-spark spark-two" aria-hidden="true">+</span><span className="world-spark spark-three" aria-hidden="true">✦</span>
+      <div className="potato-stage">
+        <div className="potato-speech" aria-live="polite">{pokes ? ['hey. that tickles.', 'my sword is mostly decorative.', 'okay, we’re friends now.'][ (pokes - 1) % 3 ] : ['oh hi. I’m the designer.', 'bad fonts, beware.', 'just one more tweak…', 'a new quest? I’m in.'][active]}</div>
+        <motion.button type="button" className={`potato-mascot universe-mascot ${awake || pokes || active ? 'is-awake' : ''}`} data-action={chapter.action} aria-label="Poke Potato" onClick={() => setPokes(value => value + 1)} onPointerEnter={() => setAwake(true)} onPointerLeave={() => setAwake(false)} onFocus={() => setAwake(true)} onBlur={() => setAwake(false)} initial={reduce ? false : { y: 12, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .3 }}><span key={`${active}-${pokes}`} className="potato-drawing" dangerouslySetInnerHTML={{ __html: swordsman }} /></motion.button>
+        <span className="potato-nameplate">GAYATRI <span>aka POTATO</span></span>
       </div>
-      <div className="absolute bottom-0 left-2 right-0">
-        <Marquee items={words} icon={<Star />} speed={16} className="py-3" />
-      </div>
-    </section>
-  );
-};
-
-export default WeAre;
+      <div className="potato-scene-props" aria-hidden="true">{chapters.map((item, index) => <span key={item.label} className={`world-object object-${index} ${active === index ? 'is-selected' : ''}`}><span className="world-object-icon">{item.icon}</span></span>)}</div>
+      <div className="potato-journey-progress" aria-hidden="true">{chapters.map((item, index) => <span key={item.label} className={index <= active ? 'is-complete' : ''} />)}<small>0{active + 1} / 04 — SCROLL TO UNPACK</small></div>
+    </div>
+    <div className="potato-scroll-stories" ref={stories}>{chapters.map((item, index) => <article key={item.label} data-chapter={index} className={`potato-scroll-chapter ${index === active ? 'is-current' : ''}`} aria-labelledby={`potato-chapter-${index}`}>
+      <p className="chapter-kicker">0{index + 1} / {item.label}</p>
+      <h3 id={`potato-chapter-${index}`}>{item.title}</h3>
+      <p className="chapter-description">{item.text}</p>
+      <span className="story-note">↳ {item.note}</span>
+      {index === 3 && <a className="potato-quest-link" href="https://www.instagram.com/potatoooedits/" target="_blank" rel="noreferrer">Start a conversation ↗</a>}
+      <span className="chapter-doodle" aria-hidden="true">{['hello, human.', 'pixel police.', 'no thoughts. just layers.', 'let’s make a little noise.'][index]}</span>
+    </article>)}</div>
+    </div>
+    <div className="about-marquee"><span className="marquee-label">SIDE EFFECTS<br />OF HIRING POTATO</span><Marquee items={words} icon={<span aria-hidden="true">✳</span>} speed={24} /></div>
+  </section>
+}

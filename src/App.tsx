@@ -1,80 +1,31 @@
-// src/App.tsx
-import React, { useCallback, useRef, useState, useEffect } from "react";
-import "./App.css";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import LoadingAnimation from "./components/LoadingAnimation";
-import FullScreenNav from "./components/FullScreenNav";
-import WeAre from "./components/weAre/WeAre";
+import { useCallback, useEffect, useState } from 'react'
+import './App.css'
+import CinemaSequence from './components/CinemaSequence'
+import Navbar from './components/Navbar'
+import LoadingAnimation from './components/LoadingAnimation'
+import FullScreenNav from './components/FullScreenNav'
+import { profile } from './data/profile'
+import ScrambleText from './components/ScrambleText'
+import { IntroContext } from './components/IntroContext'
+import PotatoLogo from './components/PotatoLogo'
 
-const App: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pageRef = useRef<HTMLDivElement>(null);
-
-  const openMenu = useCallback(() => {
-    // if (pageRef.current) {
-    //   scrollPos.current = window.scrollY;
-    //   pageRef.current.style.position = "fixed";
-    //   pageRef.current.style.top = `-${scrollPos.current}px`;
-    //   pageRef.current.style.left = "0";
-    //   pageRef.current.style.right = "0";
-    // }
-    setIsMenuOpen(true);
-  }, []);
-
-  const closeMenu = useCallback(() => {
-    // if (pageRef.current) {
-    //   pageRef.current.style.position = "";
-    //   pageRef.current.style.top = "";
-    //   pageRef.current.style.left = "";
-    //   pageRef.current.style.right = "";
-    //   window.scrollTo(0, scrollPos.current);
-    // }
-    setIsMenuOpen(false);
-  }, []);
-
+export default function App() {
+  const [introReady, setIntroReady] = useState(false)
+  const finishIntro = useCallback(() => setIntroReady(true), [])
+  const [menuOpen, setMenuOpen] = useState(false)
   useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        closeMenu();
-      }
-    };
-
-    document.addEventListener('keydown', handleEscape);
-
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-    };
-  }, [closeMenu]);
-
-
-  return (
-    <div ref={pageRef} className="w-full h-full">
-      <Navbar isOpen={isMenuOpen} onToggle={() => (isMenuOpen ? closeMenu() : openMenu())} />
-      <FullScreenNav isOpen={isMenuOpen} onClose={closeMenu} />
-      <div className="relative h-full">
-        <LoadingAnimation />
-
-          <HeroSection />
-  
-          <>
-            <WeAre />
-            <section className="h-screen flex items-center justify-center relative">
-              <div className="text-center text-black z-20">
-                <h1 className="text-6xl font-bold mb-4">Section 3</h1>
-                <p className="text-xl">The black div moves to center here</p>
-              </div>
-            </section>
-            <section className="h-screen flex items-center justify-center">
-              <div className="text-center text-black">
-                <h1 className="text-6xl font-bold mb-4">Section 4</h1>
-                <p className="text-xl">This section scrolls normally</p>
-              </div>
-            </section>
-          </>
-      </div>
-    </div>
-  );
-};
-
-export default App;
+    const keyboard = (event: KeyboardEvent) => { if (event.key === 'Escape') setMenuOpen(false) }
+    window.addEventListener('keydown', keyboard)
+    return () => window.removeEventListener('keydown', keyboard)
+  }, [])
+  return <IntroContext.Provider value={introReady}>
+    <a className="skip-link" href="#main">Skip to content</a>
+    <Navbar isOpen={menuOpen} onToggle={() => setMenuOpen(value => !value)} />
+    <FullScreenNav isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+    <LoadingAnimation onComplete={finishIntro} />
+    <main id="main"><CinemaSequence />
+      <section id="contact" className="contact-section section-spacing"><div className="section-label"><span>03 / YOUR NEXT GOOD IDEA</span><span>MY DMS HAVE SEEN WEIRDER.</span></div><p>A polished brief. A chaotic voice note. Both work.</p><a className="contact-headline" href={profile.instagram} target="_blank" rel="noreferrer"><ScrambleText text="Got a brief?" /><br /><span className="script-word"><ScrambleText text="Or a vibe?" delay={0.2} /></span><span className="contact-arrow">↗</span></a><div className="contact-bottom"><span>Send the idea. I’ll bring the font opinions.</span><a href={profile.instagram} target="_blank" rel="noreferrer">DM {profile.handle} ↗</a></div></section>
+    </main>
+    <footer className="portfolio-footer"><PotatoLogo /><span>Designed by Gayatri.<br />Overthought by Potato.</span><a href="#home">Back to top ↑</a></footer>
+  </IntroContext.Provider>
+}

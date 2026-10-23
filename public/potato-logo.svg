@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" shape-rendering="crispEdges" aria-hidden="true" focusable="false">
+  <style>.potato-face-awake,.potato-face-happy,.potato-slash{display:none}</style>
+  <path class="potato-shadow" d="M18 58h30v2H18zM22 60h22v1H22z" fill="#514937" opacity=".16"/>
+  <g class="potato-body">
+    <g class="potato-feet" fill="#39362d"><path d="M20 51h10v7H18v-4h2zM39 51h10v3h3v4H39z"/></g>
+    <path d="M20 53h8v3h-8zM41 53h7v3h-7z" fill="#968361"/>
+    <path d="M24 14h4v-4h4v4h4V6h4v8h4v4h4v4h2v6h2v8h2v12h-4v4h-4v2H20v-2h-6v-4h-4V36h2v-8h2v-6h4v-4h6z" fill="#39362d"/>
+    <path d="M24 16h4v-4h2v4h6v-2h6v6h4v4h2v6h2v8h2v8h-4v4h-4v2H22v-2h-6v-4h-4v-8h2v-8h2v-6h4v-4h4z" fill="#8f8060"/>
+    <path d="M28 12h2v4h-2zM38 8h2v8h-2zM28 16h4v2h-4z" fill="#d7c39b"/>
+    <path d="M24 18h10v3H22v3h-4v6h-2v10h-2v-8h2V22h4v-3h4z" fill="#bdaa81"/>
+    <path d="M34 16h6v3h5v5h-5v-3h-6z" fill="#bdaa81"/>
+    <path d="M46 26h2v10h2v10h-4v4h-4v2H28v-3h13v-5h4V32h1z" fill="#70664d"/>
+    <path d="M25 24h15v2h4v4h2v15h-2v3H24v-2h-4V30h2v-4h3z" fill="#6c604a"/>
+    <path d="M26 26h13v2h4v3h1v13h-2v2H25v-2h-3V32h2v-4h2z" fill="#f2e3c8"/>
+    <path d="M26 28h3v2h-4v4h-2v-2h1v-3h2z" fill="#d7bd9a"/>
+    <path d="M41 31h2v13h-2v2H27v-2h13v-3h1z" fill="#e7d2b1"/>
+    <path d="M22 40h6v3h-6zM39 40h5v3h-5z" fill="#df9e9e"/>
+    <path d="M23 40h3v1h-3zM40 40h3v1h-3z" fill="#f2bbbb"/>
+    <g class="potato-eyes"><g class="potato-gaze">
+      <g class="potato-face-sleepy" fill="#484239"><path d="M25 36h6v1h-6zM37 36h6v1h-6z"/></g>
+      <g class="potato-face-awake"><path d="M27 34h3v5h-3zM38 34h3v5h-3z" fill="#39362d"/><path d="M27 34h1v2h-1zM38 34h1v2h-1z" fill="#fff9e9"/></g>
+      <g class="potato-face-happy" fill="#484239"><path d="M25 36h2v-1h3v1h2v1h-7zM37 36h6v1h-6z"/></g>
+    </g></g>
+    <path class="potato-mouth" d="M33 41h3v1h-3z" fill="#b69479"/>
+    <path d="M11 38h4v-2h3v3h1v6h-2v3h-6v-2H9v-6h2z" fill="#39362d"/>
+    <path d="M12 39h4v6h-5v-4h1z" fill="#9e8d68"/><path d="M12 39h3v2h-3z" fill="#c4b18a"/>
+    <path d="M24 48h3v2h-3zM33 49h2v2h-2zM42 20h2v2h-2zM18 29h2v3h-2z" fill="#c4b18a"/>
+    <g class="potato-sword">
+      <path d="M49 39h3v-8h2V21h2v-6h2v3h2v14h-2v8h3v3h-5v8h-5v-8h-4v-3h2z" fill="#39362d"/>
+      <path d="M53 33h2V23h2v-4h1v12h-2v9h-3z" fill="#e4e8d3"/><path d="M55 33h1v7h-1zM57 23h1v8h-1z" fill="#a7b5a0"/>
+      <path d="M49 40h10v1H49zM52 44h2v5h-2z" fill="#b8a572"/>
+      <path d="M47 43h5v-1h2v6h-2v2h-5v-2h-1v-3h1z" fill="#39362d"/>
+      <path d="M48 44h4v4h-4z" fill="#bdaa81"/><path d="M48 44h3v1h-3z" fill="#d7c39b"/>
+      <path class="potato-sword-glint" d="M56 22h1v5h-1zM54 24h5v1h-5z" fill="#fffbea"/>
+    </g>
+    <path class="potato-slash" d="M46 19h8v2h-8zM54 21h4v2h-4zM58 23h2v8h-2zM56 31h2v4h-2zM52 35h4v2h-4z" fill="#b7c3a0"/>
+  </g>
+  <g class="potato-snooze" fill="#8f8060"><path d="M14 12h5v1h-1v1h-1v1h-1v1h3v1h-5v-1h1v-1h1v-1h1v-1h-3zM8 5h4v1h-1v1h-1v1h2v1H8V8h1V7h1V6H8z"/></g>
+</svg>

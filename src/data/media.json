@@ -1,0 +1,2552 @@
+{
+  "1k-reyna": {
+    "id": "1k-reyna",
+    "filename": "1k reyna.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1grWX3c2FkkUgYzRBa22odQ1x-QmVz-u2/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 591239,
+      "sha256": "2d9eba8336b39cd833653eb937569ee34d0b33a3aff488a01a72cab98b6b7a51"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/1k-reyna-480.avif",
+        "bytes": 17118
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/1k-reyna-480.webp",
+        "bytes": 20540
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/1k-reyna-480.jpg",
+        "bytes": 39338
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/1k-reyna-960.avif",
+        "bytes": 39382
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/1k-reyna-960.webp",
+        "bytes": 50946
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/1k-reyna-960.jpg",
+        "bytes": 109176
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/1k-reyna-1280.avif",
+        "bytes": 53859
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/1k-reyna-1280.webp",
+        "bytes": 71676
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/1k-reyna-1280.jpg",
+        "bytes": 166926
+      }
+    ]
+  },
+  "arcane": {
+    "id": "arcane",
+    "filename": "ARCANE.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1-5IlkF7xpYVqlNz4OIeDOdPIOp0BgAuF/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1231161,
+      "sha256": "81416060ca6b00ae2793a644707de1840cff2d02143be3f5455b97c6db275076"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/arcane-480.avif",
+        "bytes": 42509
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/arcane-480.webp",
+        "bytes": 51582
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/arcane-480.jpg",
+        "bytes": 100607
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/arcane-960.avif",
+        "bytes": 114093
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/arcane-960.webp",
+        "bytes": 138592
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/arcane-960.jpg",
+        "bytes": 304681
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/arcane-1080.avif",
+        "bytes": 131420
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/arcane-1080.webp",
+        "bytes": 160866
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/arcane-1080.jpg",
+        "bytes": 361605
+      }
+    ]
+  },
+  "arcane1": {
+    "id": "arcane1",
+    "filename": "ARCANE1.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/13RXAsVbO-hgNJwXSryYuv5ytEsMlE0XQ/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1154384,
+      "sha256": "3d9bbb34ff3e93ef8dc6159578b674bc87cb31dbd41777fae99189778c274ec6"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/arcane1-480.avif",
+        "bytes": 39587
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/arcane1-480.webp",
+        "bytes": 47856
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/arcane1-480.jpg",
+        "bytes": 94956
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/arcane1-960.avif",
+        "bytes": 106463
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/arcane1-960.webp",
+        "bytes": 128858
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/arcane1-960.jpg",
+        "bytes": 284058
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/arcane1-1080.avif",
+        "bytes": 125848
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/arcane1-1080.webp",
+        "bytes": 152422
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/arcane1-1080.jpg",
+        "bytes": 336065
+      }
+    ]
+  },
+  "bantman1": {
+    "id": "bantman1",
+    "filename": "BANTMAN1.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1kxU2J2vEmtHboz1Z1kDC8yyaMvv_eBK7/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 2678021,
+      "sha256": "6a5328fece92d2d9bf129bee3c863345fcbb7e65ea9366f35f8159c03cd8e46a"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/bantman1-480.avif",
+        "bytes": 50887
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/bantman1-480.webp",
+        "bytes": 74714
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/bantman1-480.jpg",
+        "bytes": 135937
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/bantman1-960.avif",
+        "bytes": 281517
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/bantman1-960.webp",
+        "bytes": 375022
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/bantman1-960.jpg",
+        "bytes": 631925
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/bantman1-1080.avif",
+        "bytes": 419304
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/bantman1-1080.webp",
+        "bytes": 548348
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/bantman1-1080.jpg",
+        "bytes": 905280
+      }
+    ]
+  },
+  "bloom": {
+    "id": "bloom",
+    "filename": "BLOOM.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/18k6qyj-LU24NHPtglJuQ96mYkJ3CcPU0/view",
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "bytes": 532012,
+      "sha256": "6be61b9a8e0fd913b491d19a7707f7f5e6358a43599b1b87e833f7e02258d9f1"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "format": "avif",
+        "url": "/work/bloom-480.avif",
+        "bytes": 25370
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "webp",
+        "url": "/work/bloom-480.webp",
+        "bytes": 30462
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "jpg",
+        "url": "/work/bloom-480.jpg",
+        "bytes": 60406
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "avif",
+        "url": "/work/bloom-960.avif",
+        "bytes": 58297
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "webp",
+        "url": "/work/bloom-960.webp",
+        "bytes": 74714
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "jpg",
+        "url": "/work/bloom-960.jpg",
+        "bytes": 160499
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "avif",
+        "url": "/work/bloom-1080.avif",
+        "bytes": 63449
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "webp",
+        "url": "/work/bloom-1080.webp",
+        "bytes": 84742
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "jpg",
+        "url": "/work/bloom-1080.jpg",
+        "bytes": 186731
+      }
+    ]
+  },
+  "clove-gtn": {
+    "id": "clove-gtn",
+    "filename": "CLOVE GTN.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1eFN-HGet-X7fRtvBPadN59VqYSAQeaxc/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 876413,
+      "sha256": "72283beddb3760dc67ee025d56ea0e6e76bcca991166cf2455f94fdfe92ba70c"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/clove-gtn-480.avif",
+        "bytes": 20386
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/clove-gtn-480.webp",
+        "bytes": 24480
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/clove-gtn-480.jpg",
+        "bytes": 51821
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/clove-gtn-960.avif",
+        "bytes": 60454
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/clove-gtn-960.webp",
+        "bytes": 74930
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/clove-gtn-960.jpg",
+        "bytes": 156435
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/clove-gtn-1280.avif",
+        "bytes": 106953
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/clove-gtn-1280.webp",
+        "bytes": 135028
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/clove-gtn-1280.jpg",
+        "bytes": 259386
+      }
+    ]
+  },
+  "deja": {
+    "id": "deja",
+    "filename": "DEJA.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1NwquwOXCJ9hMqp8HYcIKApyOFX4wbn3g/view",
+    "original": {
+      "width": 8568,
+      "height": 11424,
+      "bytes": 31710342,
+      "sha256": "8e16948457ba6c5fe65f76e495af1b538642ef1d79ab8c3d4db7a784694d84df"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "format": "avif",
+        "url": "/work/deja-480.avif",
+        "bytes": 66132
+      },
+      {
+        "width": 480,
+        "height": 640,
+        "format": "webp",
+        "url": "/work/deja-480.webp",
+        "bytes": 90210
+      },
+      {
+        "width": 480,
+        "height": 640,
+        "format": "jpg",
+        "url": "/work/deja-480.jpg",
+        "bytes": 156000
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "avif",
+        "url": "/work/deja-960.avif",
+        "bytes": 211949
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "webp",
+        "url": "/work/deja-960.webp",
+        "bytes": 287348
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "jpg",
+        "url": "/work/deja-960.jpg",
+        "bytes": 508052
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "avif",
+        "url": "/work/deja-1600.avif",
+        "bytes": 515210
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "webp",
+        "url": "/work/deja-1600.webp",
+        "bytes": 727654
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "jpg",
+        "url": "/work/deja-1600.jpg",
+        "bytes": 1215515
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "avif",
+        "url": "/work/deja-2048.avif",
+        "bytes": 770656
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "webp",
+        "url": "/work/deja-2048.webp",
+        "bytes": 1053400
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "jpg",
+        "url": "/work/deja-2048.jpg",
+        "bytes": 1838841
+      }
+    ]
+  },
+  "deja2": {
+    "id": "deja2",
+    "filename": "deja2.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1sDCPIbrG6oMHLKzxoUAEpULoYl8tvW_8/view",
+    "original": {
+      "width": 6048,
+      "height": 8064,
+      "bytes": 28589731,
+      "sha256": "862d7f2f116050d471125ce7701abc2f1c3d2ff103830ea8f08eeacb7e92ea6f"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "format": "avif",
+        "url": "/work/deja2-480.avif",
+        "bytes": 76701
+      },
+      {
+        "width": 480,
+        "height": 640,
+        "format": "webp",
+        "url": "/work/deja2-480.webp",
+        "bytes": 102908
+      },
+      {
+        "width": 480,
+        "height": 640,
+        "format": "jpg",
+        "url": "/work/deja2-480.jpg",
+        "bytes": 157965
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "avif",
+        "url": "/work/deja2-960.avif",
+        "bytes": 277451
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "webp",
+        "url": "/work/deja2-960.webp",
+        "bytes": 377418
+      },
+      {
+        "width": 960,
+        "height": 1280,
+        "format": "jpg",
+        "url": "/work/deja2-960.jpg",
+        "bytes": 590793
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "avif",
+        "url": "/work/deja2-1600.avif",
+        "bytes": 721847
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "webp",
+        "url": "/work/deja2-1600.webp",
+        "bytes": 1005436
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "format": "jpg",
+        "url": "/work/deja2-1600.jpg",
+        "bytes": 1547123
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "avif",
+        "url": "/work/deja2-2048.avif",
+        "bytes": 1122245
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "webp",
+        "url": "/work/deja2-2048.webp",
+        "bytes": 1575952
+      },
+      {
+        "width": 2048,
+        "height": 2731,
+        "format": "jpg",
+        "url": "/work/deja2-2048.jpg",
+        "bytes": 2425325
+      }
+    ]
+  },
+  "drow": {
+    "id": "drow",
+    "filename": "drow.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1VZh_Vg2RmZfp4FvXoVP8Wg1oR5SoK3EM/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 568089,
+      "sha256": "f599af23783511ac18147d65e717cdb73fdb0b5907e149b0e6112812cfc1f650"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/drow-480.avif",
+        "bytes": 20462
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/drow-480.webp",
+        "bytes": 25480
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/drow-480.jpg",
+        "bytes": 62620
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/drow-960.avif",
+        "bytes": 47107
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/drow-960.webp",
+        "bytes": 62280
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/drow-960.jpg",
+        "bytes": 166941
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/drow-1080.avif",
+        "bytes": 51798
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/drow-1080.webp",
+        "bytes": 71768
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/drow-1080.jpg",
+        "bytes": 197372
+      }
+    ]
+  },
+  "f3": {
+    "id": "f3",
+    "filename": "F3.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1sahBn2yyyv48dO_-w8vQcM2RNDX61-ZT/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 685117,
+      "sha256": "20bfdf2183fe61f8887c059980db58c2bd9134a1b36b07e1f1e7946c8d46121b"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/f3-480.avif",
+        "bytes": 25515
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/f3-480.webp",
+        "bytes": 28656
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/f3-480.jpg",
+        "bytes": 67966
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/f3-960.avif",
+        "bytes": 59324
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/f3-960.webp",
+        "bytes": 68326
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/f3-960.jpg",
+        "bytes": 188034
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/f3-1080.avif",
+        "bytes": 66610
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/f3-1080.webp",
+        "bytes": 79764
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/f3-1080.jpg",
+        "bytes": 220960
+      }
+    ]
+  },
+  "flower": {
+    "id": "flower",
+    "filename": "flower.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1MBTXLKRDyc6LeKW1hrA2lHyGmZqZ4-C2/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1355301,
+      "sha256": "9655da2062910e133d2fd5644702e60efae4b95766227b8f736e754240243235"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/flower-480.avif",
+        "bytes": 69518
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/flower-480.webp",
+        "bytes": 102728
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/flower-480.jpg",
+        "bytes": 147665
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/flower-960.avif",
+        "bytes": 173783
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/flower-960.webp",
+        "bytes": 251028
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/flower-960.jpg",
+        "bytes": 415921
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/flower-1080.avif",
+        "bytes": 205041
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/flower-1080.webp",
+        "bytes": 290972
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/flower-1080.jpg",
+        "bytes": 501402
+      }
+    ]
+  },
+  "gw": {
+    "id": "gw",
+    "filename": "GW.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1gyHZ0xQ58Q71MwIJd3xMM9dHoQf9BvQl/view",
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "bytes": 1152104,
+      "sha256": "dc1c49783947f8957930e1e73966c183271745058e41abf7897f5d1b75446a7f"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "format": "avif",
+        "url": "/work/gw-480.avif",
+        "bytes": 50906
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "webp",
+        "url": "/work/gw-480.webp",
+        "bytes": 63032
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "jpg",
+        "url": "/work/gw-480.jpg",
+        "bytes": 109230
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "avif",
+        "url": "/work/gw-960.avif",
+        "bytes": 136190
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "webp",
+        "url": "/work/gw-960.webp",
+        "bytes": 170442
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "jpg",
+        "url": "/work/gw-960.jpg",
+        "bytes": 324371
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "avif",
+        "url": "/work/gw-1080.avif",
+        "bytes": 163184
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "webp",
+        "url": "/work/gw-1080.webp",
+        "bytes": 198194
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "jpg",
+        "url": "/work/gw-1080.jpg",
+        "bytes": 389675
+      }
+    ]
+  },
+  "gw11": {
+    "id": "gw11",
+    "filename": "GW11.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1l5EdlUWsWDb4XA3WHFGTvY16uEU1Ttnb/view",
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "bytes": 880848,
+      "sha256": "0adca32375a87c24c648dd326f89d00a1ae832ce10d60808f44cff91c45fdd12"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "format": "avif",
+        "url": "/work/gw11-480.avif",
+        "bytes": 34197
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "webp",
+        "url": "/work/gw11-480.webp",
+        "bytes": 41648
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "jpg",
+        "url": "/work/gw11-480.jpg",
+        "bytes": 81542
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "avif",
+        "url": "/work/gw11-960.avif",
+        "bytes": 87674
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "webp",
+        "url": "/work/gw11-960.webp",
+        "bytes": 106164
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "jpg",
+        "url": "/work/gw11-960.jpg",
+        "bytes": 237703
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "avif",
+        "url": "/work/gw11-1080.avif",
+        "bytes": 101166
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "webp",
+        "url": "/work/gw11-1080.webp",
+        "bytes": 123634
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "jpg",
+        "url": "/work/gw11-1080.jpg",
+        "bytes": 283375
+      }
+    ]
+  },
+  "insta-pic": {
+    "id": "insta-pic",
+    "filename": "insta pic.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1-Z8Uw01lcerrmqIBcBl3_SdZbtIKzfsn/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 2856613,
+      "sha256": "9bb5f265138dd80cac3096cfe3380949c0320e4dfa68ba5e7428f74482f9a9de"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/insta-pic-480.avif",
+        "bytes": 58430
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/insta-pic-480.webp",
+        "bytes": 85060
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/insta-pic-480.jpg",
+        "bytes": 132219
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/insta-pic-960.avif",
+        "bytes": 378871
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/insta-pic-960.webp",
+        "bytes": 454646
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/insta-pic-960.jpg",
+        "bytes": 787554
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/insta-pic-1080.avif",
+        "bytes": 579677
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/insta-pic-1080.webp",
+        "bytes": 646754
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/insta-pic-1080.jpg",
+        "bytes": 1142489
+      }
+    ]
+  },
+  "iso-gtn1": {
+    "id": "iso-gtn1",
+    "filename": "ISO GTN1.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/10Usunu3Sa4Wc_SI4aSy9pViiH4YN8uy6/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 704624,
+      "sha256": "83b6a49919c60a815512879e796e9cf3d2b4069f2e549006baa726c2e55edbff"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/iso-gtn1-480.avif",
+        "bytes": 19556
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/iso-gtn1-480.webp",
+        "bytes": 24496
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/iso-gtn1-480.jpg",
+        "bytes": 50107
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/iso-gtn1-960.avif",
+        "bytes": 43726
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/iso-gtn1-960.webp",
+        "bytes": 58044
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/iso-gtn1-960.jpg",
+        "bytes": 132359
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/iso-gtn1-1280.avif",
+        "bytes": 61403
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/iso-gtn1-1280.webp",
+        "bytes": 80958
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/iso-gtn1-1280.jpg",
+        "bytes": 194100
+      }
+    ]
+  },
+  "isotn2": {
+    "id": "isotn2",
+    "filename": "ISOTN2.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1Gmz1sXgrozM6ZJak-sFzF7GtmxruGPie/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 470775,
+      "sha256": "5d4f26f36ecd5806dc42ac5bca393fb590d141e9cc1b5b4ec93339a7b33cb9b8"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/isotn2-480.avif",
+        "bytes": 18512
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/isotn2-480.webp",
+        "bytes": 21332
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/isotn2-480.jpg",
+        "bytes": 42415
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/isotn2-960.avif",
+        "bytes": 43498
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/isotn2-960.webp",
+        "bytes": 50748
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/isotn2-960.jpg",
+        "bytes": 111739
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/isotn2-1280.avif",
+        "bytes": 62211
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/isotn2-1280.webp",
+        "bytes": 72222
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/isotn2-1280.jpg",
+        "bytes": 167915
+      }
+    ]
+  },
+  "jap2": {
+    "id": "jap2",
+    "filename": "jap2.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1kkvH5N0fEjmWBttJJ7YIaKfEelGAzgUk/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1196731,
+      "sha256": "9517a2d7d97e69441a0a030ee5e568a46b1bae84e6c1f8a3cc889a0adcfa027f"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/jap2-480.avif",
+        "bytes": 60909
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/jap2-480.webp",
+        "bytes": 83306
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/jap2-480.jpg",
+        "bytes": 114765
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/jap2-960.avif",
+        "bytes": 159736
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/jap2-960.webp",
+        "bytes": 214746
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/jap2-960.jpg",
+        "bytes": 345848
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/jap2-1080.avif",
+        "bytes": 190759
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/jap2-1080.webp",
+        "bytes": 253142
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/jap2-1080.jpg",
+        "bytes": 423259
+      }
+    ]
+  },
+  "jap3": {
+    "id": "jap3",
+    "filename": "jap3.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1QSY7PL-zSYtR3pHXsBTIYsjqgOIq6sF2/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1226717,
+      "sha256": "26bda4e22483de18a498bff5e7007013193856cb8db6f33d25c73a5d33965633"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/jap3-480.avif",
+        "bytes": 66373
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/jap3-480.webp",
+        "bytes": 89644
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/jap3-480.jpg",
+        "bytes": 119990
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/jap3-960.avif",
+        "bytes": 172711
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/jap3-960.webp",
+        "bytes": 235016
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/jap3-960.jpg",
+        "bytes": 358482
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/jap3-1080.avif",
+        "bytes": 202227
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/jap3-1080.webp",
+        "bytes": 275974
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/jap3-1080.jpg",
+        "bytes": 433144
+      }
+    ]
+  },
+  "jett-tnn": {
+    "id": "jett-tnn",
+    "filename": "JETT TNN.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1PXkQc__PzJNkWCxEDQh2pHlkKdYrVEs4/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 748155,
+      "sha256": "fe65313c7496149b416ef7c4b36f7b072aafc43120a7efc4c9112329cc872ff6"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/jett-tnn-480.avif",
+        "bytes": 25152
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/jett-tnn-480.webp",
+        "bytes": 29834
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/jett-tnn-480.jpg",
+        "bytes": 55276
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/jett-tnn-960.avif",
+        "bytes": 60000
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/jett-tnn-960.webp",
+        "bytes": 72122
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/jett-tnn-960.jpg",
+        "bytes": 153970
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/jett-tnn-1280.avif",
+        "bytes": 85576
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/jett-tnn-1280.webp",
+        "bytes": 100642
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/jett-tnn-1280.jpg",
+        "bytes": 233285
+      }
+    ]
+  },
+  "m3": {
+    "id": "m3",
+    "filename": "M3.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1koKqZQqnPP27txvHDQgc9pDo9pAy5Lb3/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 772116,
+      "sha256": "10e2acc4135328406c40ed58b53574c95098d6369262639932c53f8c73fd80d3"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/m3-480.avif",
+        "bytes": 31160
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/m3-480.webp",
+        "bytes": 37116
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/m3-480.jpg",
+        "bytes": 69598
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/m3-960.avif",
+        "bytes": 70611
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/m3-960.webp",
+        "bytes": 84766
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/m3-960.jpg",
+        "bytes": 191834
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/m3-1080.avif",
+        "bytes": 78775
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/m3-1080.webp",
+        "bytes": 98856
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/m3-1080.jpg",
+        "bytes": 230232
+      }
+    ]
+  },
+  "minimal-og": {
+    "id": "minimal-og",
+    "filename": "minimal og.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1PJXsgQVN4qMxBY8mYNK6bE0Tfqw9OuIJ/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 433904,
+      "sha256": "42f34d650c1469e86a974267199477d58ac406654409fc976fdcd447261e1590"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/minimal-og-480.avif",
+        "bytes": 28032
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/minimal-og-480.webp",
+        "bytes": 35320
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/minimal-og-480.jpg",
+        "bytes": 57006
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/minimal-og-960.avif",
+        "bytes": 75055
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/minimal-og-960.webp",
+        "bytes": 94352
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/minimal-og-960.jpg",
+        "bytes": 165505
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/minimal-og-1080.avif",
+        "bytes": 88652
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/minimal-og-1080.webp",
+        "bytes": 112724
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/minimal-og-1080.jpg",
+        "bytes": 200940
+      }
+    ]
+  },
+  "minimal2": {
+    "id": "minimal2",
+    "filename": "minimal2.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/19UyjT8VPUDtHG7dwdlg0p3rYZqiTiQb6/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 1001850,
+      "sha256": "38890ad5498e5fb6f00f3a1d6ae2d10c81dae68ad9396ccc65e2e708d8e00123"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/minimal2-480.avif",
+        "bytes": 52569
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/minimal2-480.webp",
+        "bytes": 72306
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/minimal2-480.jpg",
+        "bytes": 89210
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/minimal2-960.avif",
+        "bytes": 214710
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/minimal2-960.webp",
+        "bytes": 286496
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/minimal2-960.jpg",
+        "bytes": 350716
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/minimal2-1080.avif",
+        "bytes": 270251
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/minimal2-1080.webp",
+        "bytes": 358602
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/minimal2-1080.jpg",
+        "bytes": 442586
+      }
+    ]
+  },
+  "omentn": {
+    "id": "omentn",
+    "filename": "OMENTN.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1c1mmX0OqaEUbM4z9jD2zzE3m4Sk_tw5c/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 470777,
+      "sha256": "c2044a5c797cbb5d1c01099c192eebe2f29b7fe9688586ca80c4dd1d37439ceb"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/omentn-480.avif",
+        "bytes": 18893
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/omentn-480.webp",
+        "bytes": 22308
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/omentn-480.jpg",
+        "bytes": 42259
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/omentn-960.avif",
+        "bytes": 44146
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/omentn-960.webp",
+        "bytes": 51474
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/omentn-960.jpg",
+        "bytes": 111815
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/omentn-1280.avif",
+        "bytes": 62908
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/omentn-1280.webp",
+        "bytes": 74226
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/omentn-1280.jpg",
+        "bytes": 167118
+      }
+    ]
+  },
+  "premier": {
+    "id": "premier",
+    "filename": "PREMIER.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1QPZb1cXl2otp9LTN_67RhrbyAjOaqCYv/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 362229,
+      "sha256": "827cd782813237a815f1218d506f2e5301825942f8cc512b2062e9ec36a54340"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/premier-480.avif",
+        "bytes": 12717
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/premier-480.webp",
+        "bytes": 14274
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/premier-480.jpg",
+        "bytes": 29326
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/premier-960.avif",
+        "bytes": 34417
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/premier-960.webp",
+        "bytes": 38976
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/premier-960.jpg",
+        "bytes": 78820
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/premier-1280.avif",
+        "bytes": 51467
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/premier-1280.webp",
+        "bytes": 57004
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/premier-1280.jpg",
+        "bytes": 132046
+      }
+    ]
+  },
+  "ramen": {
+    "id": "ramen",
+    "filename": "ramen.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1QzIkrIjvZ71iQ2xtsmxrV5DEHhJQuwGQ/view",
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "bytes": 652040,
+      "sha256": "c6ce0b155df6e937a589b8f25edcdb6b3733b3de91a55b32309adbdf5362b57f"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "format": "avif",
+        "url": "/work/ramen-480.avif",
+        "bytes": 31825
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "webp",
+        "url": "/work/ramen-480.webp",
+        "bytes": 41800
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "jpg",
+        "url": "/work/ramen-480.jpg",
+        "bytes": 78192
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "avif",
+        "url": "/work/ramen-960.avif",
+        "bytes": 72912
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "webp",
+        "url": "/work/ramen-960.webp",
+        "bytes": 99274
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "jpg",
+        "url": "/work/ramen-960.jpg",
+        "bytes": 204220
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "avif",
+        "url": "/work/ramen-1080.avif",
+        "bytes": 78820
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "webp",
+        "url": "/work/ramen-1080.webp",
+        "bytes": 116518
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "jpg",
+        "url": "/work/ramen-1080.jpg",
+        "bytes": 244795
+      }
+    ]
+  },
+  "reynaa": {
+    "id": "reynaa",
+    "filename": "REYNAA.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1XMb7mMrY_4EXdnxKpaGBIe-f6WsvV2Jm/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 735199,
+      "sha256": "b29561d119b827cab2b9ffcc55cf02f74f84b3e93e21d11b90ddfbb3a237045d"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/reynaa-480.avif",
+        "bytes": 25423
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/reynaa-480.webp",
+        "bytes": 30450
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/reynaa-480.jpg",
+        "bytes": 57092
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/reynaa-960.avif",
+        "bytes": 56359
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/reynaa-960.webp",
+        "bytes": 70332
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/reynaa-960.jpg",
+        "bytes": 154047
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/reynaa-1280.avif",
+        "bytes": 79390
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/reynaa-1280.webp",
+        "bytes": 100456
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/reynaa-1280.jpg",
+        "bytes": 236208
+      }
+    ]
+  },
+  "s3t": {
+    "id": "s3t",
+    "filename": "S3T.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1Mi9CX3NxBPtcGPwCh8j5nBKPKqp6kfV1/view",
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "bytes": 801091,
+      "sha256": "49fb719084f76f394c642e920a0bc304c7e749c7d34977c829bd65a6ebe1aebc"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "url": "/work/s3t-480.avif",
+        "bytes": 25830
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "url": "/work/s3t-480.webp",
+        "bytes": 28712
+      },
+      {
+        "width": 480,
+        "height": 600,
+        "format": "jpg",
+        "url": "/work/s3t-480.jpg",
+        "bytes": 60623
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "avif",
+        "url": "/work/s3t-960.avif",
+        "bytes": 62144
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "webp",
+        "url": "/work/s3t-960.webp",
+        "bytes": 67440
+      },
+      {
+        "width": 960,
+        "height": 1200,
+        "format": "jpg",
+        "url": "/work/s3t-960.jpg",
+        "bytes": 172371
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "avif",
+        "url": "/work/s3t-1080.avif",
+        "bytes": 69003
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "webp",
+        "url": "/work/s3t-1080.webp",
+        "bytes": 80310
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "format": "jpg",
+        "url": "/work/s3t-1080.jpg",
+        "bytes": 205525
+      }
+    ]
+  },
+  "skyegtn1": {
+    "id": "skyegtn1",
+    "filename": "SKYEGTN1.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1eQZAbmRxxp2tSAa-V4XHiuO2acxNf38C/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 641277,
+      "sha256": "0cea8b5ee65c133110ed35d5a9e07c1954c943aa691f6a062dadf96cf5b8bb4d"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/skyegtn1-480.avif",
+        "bytes": 26727
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/skyegtn1-480.webp",
+        "bytes": 30228
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/skyegtn1-480.jpg",
+        "bytes": 57227
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/skyegtn1-960.avif",
+        "bytes": 64321
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/skyegtn1-960.webp",
+        "bytes": 77230
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/skyegtn1-960.jpg",
+        "bytes": 160285
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/skyegtn1-1280.avif",
+        "bytes": 87372
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/skyegtn1-1280.webp",
+        "bytes": 109824
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/skyegtn1-1280.jpg",
+        "bytes": 235127
+      }
+    ]
+  },
+  "tn2": {
+    "id": "tn2",
+    "filename": "TN2.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1BpEIlyMZoUu2SaXE42pWXRsCnMZ23P2f/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 681087,
+      "sha256": "eae2848baf3f1f338e04b2094fafd8fc0ec4d05aff21939eb078490661b1b0c2"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/tn2-480.avif",
+        "bytes": 21305
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/tn2-480.webp",
+        "bytes": 24198
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/tn2-480.jpg",
+        "bytes": 47600
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/tn2-960.avif",
+        "bytes": 54783
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/tn2-960.webp",
+        "bytes": 63006
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/tn2-960.jpg",
+        "bytes": 141381
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/tn2-1280.avif",
+        "bytes": 82861
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/tn2-1280.webp",
+        "bytes": 95906
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/tn2-1280.jpg",
+        "bytes": 222678
+      }
+    ]
+  },
+  "tncg": {
+    "id": "tncg",
+    "filename": "TNCG.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/13W09klZVoNSZQK3Zys6jFwWklCI9LRqe/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 445635,
+      "sha256": "dca8170d08070a0a9b085e83b695ad69f80aca92fdf526fb95b6cf572166cdcc"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/tncg-480.avif",
+        "bytes": 19634
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/tncg-480.webp",
+        "bytes": 22868
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/tncg-480.jpg",
+        "bytes": 41706
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/tncg-960.avif",
+        "bytes": 42656
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/tncg-960.webp",
+        "bytes": 53218
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/tncg-960.jpg",
+        "bytes": 106749
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/tncg-1280.avif",
+        "bytes": 60283
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/tncg-1280.webp",
+        "bytes": 74132
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/tncg-1280.jpg",
+        "bytes": 159843
+      }
+    ]
+  },
+  "tnteam": {
+    "id": "tnteam",
+    "filename": "TNTEAM.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/19S-qbqhWFWJ3dA5ShiAL__Ds_Wrhe36W/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 900022,
+      "sha256": "b9d56cf9853cb980c8429c9cab566d455883968e412741fcea7dc30bc89b7366"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/tnteam-480.avif",
+        "bytes": 26056
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/tnteam-480.webp",
+        "bytes": 33486
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/tnteam-480.jpg",
+        "bytes": 56800
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/tnteam-960.avif",
+        "bytes": 66718
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/tnteam-960.webp",
+        "bytes": 88392
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/tnteam-960.jpg",
+        "bytes": 171293
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/tnteam-1280.avif",
+        "bytes": 100302
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/tnteam-1280.webp",
+        "bytes": 133638
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/tnteam-1280.jpg",
+        "bytes": 271793
+      }
+    ]
+  },
+  "vyse1": {
+    "id": "vyse1",
+    "filename": "VYSE1.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1ESn2jHbt9OY_qy6tSyYpsneIkOhioMsU/view",
+    "original": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 596544,
+      "sha256": "ed787dcd20e2ce11803ea8749b526d8f5b5af2d7260691228c41a724db6a045d"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "url": "/work/vyse1-480.avif",
+        "bytes": 22505
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "url": "/work/vyse1-480.webp",
+        "bytes": 26622
+      },
+      {
+        "width": 480,
+        "height": 270,
+        "format": "jpg",
+        "url": "/work/vyse1-480.jpg",
+        "bytes": 50356
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "avif",
+        "url": "/work/vyse1-960.avif",
+        "bytes": 52877
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "webp",
+        "url": "/work/vyse1-960.webp",
+        "bytes": 60992
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "format": "jpg",
+        "url": "/work/vyse1-960.jpg",
+        "bytes": 133370
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "avif",
+        "url": "/work/vyse1-1280.avif",
+        "bytes": 74896
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "webp",
+        "url": "/work/vyse1-1280.webp",
+        "bytes": 81696
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "format": "jpg",
+        "url": "/work/vyse1-1280.jpg",
+        "bytes": 193003
+      }
+    ]
+  },
+  "word": {
+    "id": "word",
+    "filename": "WORD.jpg",
+    "sourceUrl": "https://drive.google.com/file/d/1vBTw3s9Wq_xkyajLpJKuc1pudRG2N2zY/view",
+    "original": {
+      "width": 1080,
+      "height": 1080,
+      "bytes": 268534,
+      "sha256": "9f2ba310057cfec3c0ac0d3d59d960c334ecea4c37c01b65e9db5a5974331cc6"
+    },
+    "variants": [
+      {
+        "width": 480,
+        "height": 480,
+        "format": "avif",
+        "url": "/work/word-480.avif",
+        "bytes": 17648
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "webp",
+        "url": "/work/word-480.webp",
+        "bytes": 20388
+      },
+      {
+        "width": 480,
+        "height": 480,
+        "format": "jpg",
+        "url": "/work/word-480.jpg",
+        "bytes": 37831
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "avif",
+        "url": "/work/word-960.avif",
+        "bytes": 42569
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "webp",
+        "url": "/work/word-960.webp",
+        "bytes": 50264
+      },
+      {
+        "width": 960,
+        "height": 960,
+        "format": "jpg",
+        "url": "/work/word-960.jpg",
+        "bytes": 104903
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "avif",
+        "url": "/work/word-1080.avif",
+        "bytes": 47865
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "webp",
+        "url": "/work/word-1080.webp",
+        "bytes": 57292
+      },
+      {
+        "width": 1080,
+        "height": 1080,
+        "format": "jpg",
+        "url": "/work/word-1080.jpg",
+        "bytes": 123250
+      }
+    ]
+  }
+}

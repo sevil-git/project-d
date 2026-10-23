@@ -1,126 +1,88 @@
-// src/components/LoadingAnimation.tsx
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import Flip from 'gsap/Flip';
-import CustomEase from 'gsap/CustomEase';
-import SplitType from 'split-type';
+import { useLayoutEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { useReducedMotion } from 'framer-motion'
+import ArtworkImage from './ArtworkImage'
+import { introArtworks, loadingArtworks } from '../data/artworks'
 
-import img1 from '../assets/1.jpg';
-import img2 from '../assets/2.jpg';
-import img3 from '../assets/3.jpg';
-import img4 from '../assets/4.jpg';
-
-const initialImgs = [img2, img1, img3, img4, img2];
-const mainImgs = [img1, img3, img4];
-
-// interface LoadingAnimationProps {
-//   setIsLoading: (loading: boolean) => void;
-// }
-
-const LoadingAnimation = () => {
-  useEffect(() => {
-    gsap.registerPlugin(Flip, CustomEase);
-
-    CustomEase.create('hop', 'M0,0 C0.335,0.022 0.448,0.079 0.5,0.5 0.542,0.846 0.615,1 1,1');
-    CustomEase.create('hop2', 'M0,0 C0.078,0.617 0.114,0.716 0.255,0.828 0.373,0.922 0.561,1 1,1');
-
-    // Split lines if you use them later
-    const split = new SplitType('.site-info h2', { types: 'lines' });
-    split.lines?.forEach(line => {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'line';
-      const span = document.createElement('span');
-      span.textContent = line.textContent;
-      wrapper.appendChild(span);
-      line.parentNode?.replaceChild(wrapper, line);
-    });
-
-    const revealerTl = gsap.timeline();
-    revealerTl
-      .to('.r-1', {
-        clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)',
-        duration: 1.5,
-        ease: 'hop',
+export default function LoadingAnimation({ onComplete }: { onComplete: () => void }) {
+  const root = useRef<HTMLDivElement>(null)
+  const reduce = useReducedMotion()
+  useLayoutEffect(() => {
+    if (reduce) return
+    let disposed = false, started = false
+    let imageWait: number | undefined
+    const meter = { assets: 0, sequence: 0 }
+    const context = gsap.context(() => {
+      const frames = gsap.utils.toArray<HTMLElement>('.intro-frame')
+      const landing = frames.slice(-introArtworks.length)
+      const foregrounds = frames.map(frame => frame.querySelector<HTMLElement>('.intro-foreground')!)
+      const count = root.current!.querySelector<HTMLElement>('.intro-loading-number')!
+      const fill = root.current!.querySelector<HTMLElement>('.intro-loading-fill')!
+      const updateProgress = () => {
+        const progress = Math.round(Math.min(100, meter.assets * 30 + meter.sequence * 70))
+        count.textContent = `${String(progress).padStart(2, '0')}%`
+        fill.style.transform = `scaleX(${progress / 100})`
+      }
+      gsap.set(frames, { autoAlpha: 0 })
+      gsap.set(foregrounds, { scale: 0.985 })
+      const styles = getComputedStyle(document.documentElement)
+      const width = parseFloat(styles.getPropertyValue('--intro-thumb-width'))
+      const height = parseFloat(styles.getPropertyValue('--intro-thumb-height'))
+      const gap = parseFloat(styles.getPropertyValue('--intro-thumb-gap'))
+      const inset = parseFloat(styles.getPropertyValue('--intro-thumb-inset'))
+      const mobile = window.matchMedia('(max-width: 700px)').matches
+      const safeBottom = mobile ? parseFloat(getComputedStyle(root.current!).paddingBottom) || 0 : 0
+      const collapseAt = 3.1
+      const timeline = gsap.timeline({ paused: true, onComplete })
+      timeline.set(frames[0], { autoAlpha: 1 })
+      frames.forEach((frame, i) => {
+        timeline.to(frame, { autoAlpha: 1, duration: i === 0 ? 0.01 : 0.18 }, i * 0.5)
+          .to(foregrounds[i], { scale: 1, duration: 0.5, ease: 'power2.out' }, i * 0.5)
       })
-      .to(
-        '.r-2',
-        {
-          clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)',
-          duration: 1.5,
-          ease: 'hop',
-        },
-        '<'
-      );
-    // Image‐scale timeline
-    const scaleTl = gsap.timeline();
-    scaleTl.to('.img:first-child', {
-      scale: 1, duration: 1.5, ease: 'power4.inOut'
-    });
-    document.querySelectorAll<HTMLDivElement>('.img:not(:first-child)')
-      .forEach(el => {
-        scaleTl.to(el, {
-          opacity: 1, scale: 1, duration: 0.75, ease: 'power3.out'
-        }, '>-');
-      });
-
-    // Combine, then Flip-stacker
-    gsap.timeline()
-      .add(revealerTl)
-      .add(scaleTl, '-=1.25')
-      .add(() => {
-        document.querySelectorAll('.img:not(.main)').forEach(el => el.remove());
-        const state = Flip.getState('.main');
-        document.querySelector('.images')?.classList.add('stacked-container');
-        document.querySelectorAll<HTMLDivElement>('.main').forEach((el, i) => {
-          el.classList.add('stacked');
-          el.style.order = `${i}`;
-          gsap.set('.img.stacked', { clearProps: 'transform, top, left' });
-        });
-        Flip.from(state, {
-          duration: 2,
-          ease: 'hop',
-          absolute: true,
-          stagger: { amount: -0.3 },
-        });
-        // Set z-index of .revealers to -99
-        const revealers = document.querySelector('.revealers') as HTMLElement | null;
-        if (revealers) {
-          revealers.style.zIndex = '-99';
-        }
-        // Set z-index of .images-wrapper to 0
-        setTimeout(() => {
-          const imagesWrapper = document.querySelector('.images-wrapper') as HTMLElement | null;
-          if (imagesWrapper) {
-            imagesWrapper.style.zIndex = '10';
-          }
-        }, 3500);
-      });
-  }, []);
-
-  return (
-    <>
-      <div className="revealers">
-        <div className="revealer r-1" />
-        <div className="revealer r-2" />
-      </div>
-
-      {/* ← Wrap only the .images in an overflow-hidden container */}
-      <div className="images-wrapper">
-        <div className="images">
-          {initialImgs.map((src, idx) => (
-            <div className="img" key={`init-${idx}`}>
-              <img src={src} alt="" />
-            </div>
-          ))}
-          {mainImgs.map((src, idx) => (
-            <div className="img main" key={`main-${idx}`}>
-              <img src={src} alt="" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default LoadingAnimation;
+      timeline.to(meter, { sequence: 1, duration: 4.2, ease: 'none', onUpdate: updateProgress }, 0)
+        .to('.intro-caption', { autoAlpha: 0, duration: 0.18 }, collapseAt - 0.2)
+        .set(frames.slice(0, -introArtworks.length), { autoAlpha: 0 }, collapseAt)
+        .to('.intro-backdrop', { autoAlpha: 0, duration: 0.25 }, collapseAt)
+        .set(landing, { background: 'transparent' }, collapseAt)
+        .to('.intro-curtain', { scaleY: 0, transformOrigin: 'top', duration: 1.15, ease: 'power3.inOut' }, collapseAt)
+        .to(foregrounds, { padding: 0, duration: 0.5, ease: 'power2.inOut' }, collapseAt)
+        .to(landing, { width, height,
+          left: i => mobile ? window.innerWidth / 2 + (i - 1) * (width + gap) - width / 2 : inset,
+          top: () => window.innerHeight - safeBottom - inset - height,
+          y: i => mobile ? 0 : -i * (height + gap),
+          duration: 1.15, stagger: 0.05, ease: 'power3.inOut' }, collapseAt)
+        .to('.intro-loading', { autoAlpha: 0, duration: 0.18 }, 4.22)
+        .to(root.current, { autoAlpha: 0, duration: 0.25 }, 4.5)
+      const start = () => {
+        if (disposed || started) return
+        started = true
+        window.clearTimeout(imageWait)
+        // Once the wait expires, the page can still open using its image fallbacks.
+        meter.assets = 1
+        updateProgress()
+        timeline.play(0)
+      }
+      let decoded = 0
+      const ready = foregrounds.map(foreground => foreground.querySelector('img')!.decode()
+        .catch(() => {})
+        .then(() => {
+          if (disposed) return
+          decoded += 1
+          meter.assets = Math.max(meter.assets, decoded / frames.length)
+          updateProgress()
+        }))
+      imageWait = window.setTimeout(start, 2200)
+      void Promise.all(ready).then(start)
+    }, root)
+    return () => { disposed = true; window.clearTimeout(imageWait); context.revert() }
+  }, [reduce, onComplete])
+  return <div ref={root} className="portfolio-intro" aria-hidden="true" style={reduce ? { display: 'none' } : undefined}>
+    <div className="intro-curtain" />
+    {loadingArtworks.map((art, i) => <div className="intro-frame" data-artwork={art.id} key={art.id} style={{ zIndex: i + 1 }}>
+      <ArtworkImage art={art} eager sizes="100vw" className="intro-backdrop" />
+      <div className="intro-foreground"><ArtworkImage art={art} eager sizes="100vw" /></div>
+      <span className="intro-caption"><span>POTATO / SELECTED IMPRESSIONS</span><span>{String(i + 1).padStart(2, '0')} — {art.title}</span></span>
+    </div>)}
+    <div className="intro-loading"><div className="intro-loading-row"><span>LOADING PORTFOLIO<span className="intro-loading-note">A little good taste, coming right up.</span></span><span className="intro-loading-number">00%</span></div><div className="intro-loading-track"><span className="intro-loading-fill" /></div></div>
+  </div>
+}
