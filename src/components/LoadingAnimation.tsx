@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef } from 'react'
+import { flushSync } from 'react-dom'
 import gsap from 'gsap'
 import { useReducedMotion } from 'framer-motion'
 import ArtworkImage from './ArtworkImage'
@@ -33,7 +34,8 @@ export default function LoadingAnimation({ onComplete }: { onComplete: () => voi
       const mobile = window.matchMedia('(max-width: 700px)').matches
       const safeBottom = mobile ? parseFloat(getComputedStyle(root.current!).paddingBottom) || 0 : 0
       const collapseAt = 3.1
-      const timeline = gsap.timeline({ paused: true, onComplete })
+      // Commit the settled strip in the same frame that removes the moving cards.
+      const timeline = gsap.timeline({ paused: true, onComplete: () => flushSync(onComplete) })
       timeline.set(frames[0], { autoAlpha: 1 })
       frames.forEach((frame, i) => {
         timeline.to(frame, { autoAlpha: 1, duration: i === 0 ? 0.01 : 0.18 }, i * 0.5)
@@ -52,7 +54,7 @@ export default function LoadingAnimation({ onComplete }: { onComplete: () => voi
           y: i => mobile ? 0 : -i * (height + gap),
           duration: 1.15, stagger: 0.05, ease: 'power3.inOut' }, collapseAt)
         .to('.intro-loading', { autoAlpha: 0, duration: 0.18 }, 4.22)
-        .to(root.current, { autoAlpha: 0, duration: 0.25 }, 4.5)
+        .set(root.current, { autoAlpha: 0 }, 4.5)
       const start = () => {
         if (disposed || started) return
         started = true

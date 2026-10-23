@@ -46,8 +46,8 @@ export const artworks: Artwork[] = catalogue.map(([id, title, category, descript
 export const categories = ['All work', 'Posters', 'Thumbnails', 'Composites', 'Food & lifestyle'] as const
 export const getArtwork = (id: string) => artworks.find(art => art.id === id) ?? artworks[0]
 
-// An opening art study: blossoms, reflected light, then ink and armor.
-export const introArtworks = ['bloom', 'm3', 'jap3'].map(getArtwork)
+// An opening art study: portrait typography, reflected light, then ink and armor.
+export const introArtworks = ['minimal2', 'm3', 'jap3'].map(getArtwork)
 // Six fullscreen studies; only the last three become persistent cards in the strip.
 export const loadingArtworks = ['flower', 'f3', 'minimal-og', ...introArtworks.map(art => art.id)].map(getArtwork)
 

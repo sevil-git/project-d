@@ -7,7 +7,7 @@ import { profile } from '../data/profile'
 import PotatoLogo from './PotatoLogo'
 
 const art = ['flower', 'minimal-og', 'jap2', 'jett-tnn'].map(getArtwork)
-const links = [['Home base', '#home'], ['The work', '#work'], ['Meet Potato', '#about'], ['Let’s talk', '#contact']]
+const links = [['Home sweet home', '#home', 'Back to the beginning'], ['Roll the film', '#work', 'The selected cuts'], ['Meet the potato', '#about', 'Human. Designer. Pixel defender.'], ['The rabbit hole', '#all-work', 'All 33 reasons to look twice'], ['Make some noise', '#contact', 'Your idea goes here']]
 export default function FullScreenNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const firstLink = useRef<HTMLAnchorElement>(null)
@@ -36,10 +36,11 @@ export default function FullScreenNav({ isOpen, onClose }: { isOpen: boolean; on
     }
   }, [isOpen, reduce])
   useEffect(() => () => dialog.current?.close(), [])
-  return <dialog ref={dialog} id="fullscreen-nav" className="fullscreen-menu" onCancel={event => { event.preventDefault(); onClose() }} aria-label="Main navigation">
+  return <dialog ref={dialog} id="fullscreen-nav" className="fullscreen-menu potato-explore-menu" onCancel={event => { event.preventDefault(); onClose() }} aria-label="Main navigation">
     <div className="menu-top"><PotatoLogo onNavigate={onClose} /><button className="close-menu" onClick={onClose}>esc <span>×</span></button></div>
+    <p className="explore-kicker">YOU ARE NOW ENTERING THE POTATOVERSE. <span>TAKE THE SCENIC ROUTE. ↓</span></p>
     <div className="menu-center"><div className="menu-art">{isOpen && art.map((item, i) => <motion.div key={item.id} initial={{ rotate: 0 }} animate={{ rotate: reduce ? 0 : i * 5 }} whileHover={{ rotate: reduce ? 0 : -8, scale: reduce ? 1 : 1.03 }} className="menu-art-piece" style={{ zIndex: 4 - i }}><ArtworkImage art={item} sizes="(max-width: 700px) 34vw, 300px" /></motion.div>)}</div>
-      <nav aria-label="Primary">{links.map(([label, href], i) => <a ref={i === 0 ? firstLink : undefined} className="nav-link" key={href} href={href} onClick={onClose}><sup>0{i + 1}</sup>{label}<span>↗</span></a>)}</nav>
+      <nav aria-label="Primary">{links.map(([label, href, description], i) => <a ref={i === 0 ? firstLink : undefined} className="nav-link" key={href} href={href} onClick={onClose}><sup>0{i + 1}</sup><span className="explore-link-copy">{label}<small>{description}</small></span><span className="explore-arrow">↗</span></a>)}</nav>
     </div>
     <div className="menu-footer"><span>Gayatri does the design.<br />Potato does the overthinking.</span><a href={profile.instagram} target="_blank" rel="noreferrer">Find me on Instagram ↗</a></div>
   </dialog>

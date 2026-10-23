@@ -5,6 +5,7 @@ import { useReducedMotion } from 'framer-motion'
 import ArtworkImage from './ArtworkImage'
 import { cinemaArtworks, introArtworks } from '../data/artworks'
 import { CinemaContext } from './CinemaContext'
+import { IntroContext } from './IntroContext'
 
 gsap.registerPlugin(ScrollTrigger)
 const sequenceArtworks = [...introArtworks, ...cinemaArtworks]
@@ -12,6 +13,7 @@ const sequenceArtworks = [...introArtworks, ...cinemaArtworks]
 /** One persistent image sequence; the stage supplies its exact, scrubbed reveal position. */
 export default function CinemaFilmstrip() {
   const root = useRef<HTMLElement>(null)
+  const introReady = useContext(IntroContext)
   const { stripRender, reelPosition } = useContext(CinemaContext)
   const reduce = useReducedMotion()
   useLayoutEffect(() => {
@@ -71,12 +73,12 @@ export default function CinemaFilmstrip() {
         gsap.set(aperture, { clipPath: 'none', maskImage: 'none' })
       }
       frames.forEach((frame, index) => {
-        const opening = index < introArtworks.length
         const distance = Math.abs(index - position)
         const focus = Math.max(0, 1 - distance)
-        gsap.set(frame, { scale: opening ? 1 : 1 + 0.14 * focus * unroll,
-          opacity: opening ? 1 : mix(1, 0.4 + focus * 0.6, unroll),
-          filter: 'none' })
+        // Apply the same focus falloff to every card, including the three opening studies.
+        gsap.set(frame, { scale: 1 + 0.14 * focus * unroll,
+          opacity: mix(1, 0.4 + focus * 0.6, unroll),
+          filter: `blur(${2 * (1 - focus) * unroll}px)` })
       })
       const exit = clamp((scroll - cinemaEnd) / height)
       document.documentElement.style.setProperty('--film-nav-shift', `${mobile ? 0 : (frameWidth + 18) * unroll * (1 - exit)}px`)
@@ -91,7 +93,7 @@ export default function CinemaFilmstrip() {
     }, root)
     return () => { stripRender.current = null; context.revert(); document.documentElement.style.removeProperty('--film-nav-shift') }
   }, [reduce, stripRender, reelPosition])
-  return <aside ref={root} className="cinema-filmstrip" aria-hidden="true">
+  return <aside ref={root} className={`cinema-filmstrip${introReady ? ' is-ready' : ''}`} aria-hidden="true">
     <div className="film-aperture"><div className="film-track">
       {sequenceArtworks.map((art, index) => <div key={art.id} data-artwork={art.id}
         className={`film-frame ${index < introArtworks.length ? 'is-opening' : ''}`}>
